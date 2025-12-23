@@ -1,0 +1,187 @@
+version: 2
+
+sources:
+  - name: raw_input
+    description: Tabelas raw (Réplicas da fonte de dados).
+    tables:
+      - name: sheets_metragem_lojas
+        description: Tabela onde conseguimos a informação da metragem das lojas. 
+        columns:
+          - name: diretor
+            description: ''
+            data_type: character varying
+          - name: regional
+            description: ''
+            data_type: character varying
+          - name: sigla
+            description: ''
+            data_type: character varying
+          - name: nome_fantasia
+            description: ''
+            data_type: character varying
+          - name: bandeira
+            description: ''
+            data_type: character varying
+          - name: metragem
+            description: ''
+            data_type: numeric
+      - name: mstore_t_estabelecimento
+        description: Tabela do MEGA que contém dados sobre estabelecimentos no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idestabelecimento
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: razaosocial
+            description: ''
+            data_type: character varying
+          - name: nomefantasia
+            description: ''
+            data_type: character varying
+          - name: cnpj
+            description: ''
+            data_type: character varying
+          - name: inscricaoestadual
+            description: ''
+            data_type: character varying
+          - name: idendereco
+            description: ''
+            data_type: numeric
+          - name: sigla
+            description: ''
+            data_type: character varying
+          - name: observacao
+            description: ''
+            data_type: character varying
+          - name: tipo
+            description: ''
+            data_type: character varying
+          - name: idunidadenegocio
+            description: ''
+            data_type: numeric
+          - name: defeito
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: crt
+            description: ''
+            data_type: numeric
+          - name: idcsc
+            description: ''
+            data_type: character varying
+          - name: csc
+            description: ''
+            data_type: character varying
+          - name: logomarca
+            description: ''
+            data_type: character varying
+          - name: codigolojacards
+            description: ''
+            data_type: character varying
+          - name: permitirmovimentacao
+            description: ''
+            data_type: character varying
+          - name: nomemobile
+            description: ''
+            data_type: character varying
+          - name: longitude
+            description: ''
+            data_type: character varying
+          - name: latitude
+            description: ''
+            data_type: character varying
+          - name: tptrib
+            description: ''
+            data_type: numeric
+          - name: idgrupof
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_endereco
+        description: Tabela do MEGA com informações de endereços no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idendereco
+            description: ''
+            data_type: numeric
+          - name: cep
+            description: ''
+            data_type: character varying
+          - name: uf
+            description: ''
+            data_type: character varying
+          - name: localidade
+            description: ''
+            data_type: character varying
+          - name: bairro
+            description: ''
+            data_type: character varying
+          - name: numero
+            description: ''
+            data_type: character varying
+          - name: complemento
+            description: ''
+            data_type: character varying
+          - name: logradouro
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: tipomoradia
+            description: ''
+            data_type: character varying
+          - name: codigomunicipio
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_unidadenegocio
+        description: Tabela do MEGA com dados sobre unidades de negócio no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idunidadenegocio
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: atualizacadastrobeehome
+            description: ''
+            data_type: character varying
+          - name: idcadastrobeehome
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_grupof
+        description: Tabela do MEGA que traz informações com maior detalhamento. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idgrupof
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+        

@@ -1,0 +1,255 @@
+idestabelecimento,ds_sigla,ds_unidadenegocio,loja_ativa
+366,900,Geral,NAO
+361,100,Grupo Ecommerce,NAO
+139,900,Grupo Oscar Calçados,NAO
+28,14,Ñ Grupo Schutz,NAO
+26,21,Grupo Oscar Calçados,NAO
+56,25,Grupo Stock Show Sjc,NAO
+75,27,Grupo Adidas,NAO
+133,29,Grupo Oscar Calçados,NAO
+63,33,Geral,NAO
+140,46,Grupo Constantino,NAO
+176,51,Grupo Adidas,NAO
+179,52,Grupo Adidas,NAO
+122,90,Grupo Stock Show Mogi,NAO
+135,93,Grupo Defeito,NAO
+123,94,Grupo Defeito,NAO
+125,95,Grupo Defeito,NAO
+124,96,Geral,NAO
+121,97,Geral,NAO
+132,98,Geral,NAO
+180,103,Grupo Jô Calçados,NAO
+143,104,Grupo Jô Calçados,NAO
+148,110,Grupo Jô Calçados,NAO
+150,112,Grupo Jô Calçados,NAO
+169,129,Grupo Jô Calçados,NAO
+137,130,Grupo Oscar Calçados,NAO
+178,131,Grupo Jô Calçados,NAO
+368,151,Geral,NAO
+257,207,Grupo Carioca Calçados,NAO
+355,301,Grupo Paquetá,NAO
+356,303,Grupo Paquetá,NAO
+345,316,Grupo Paquetá,NAO
+346,322,Grupo Paquetá,NAO
+348,329,Grupo Paquetá,NAO
+310,360,Geral,NAO
+313,365,Grupo Paquetá,NAO
+290,500,Grupo Diadora,NAO
+307,843,Geral,NAO
+170,900,Grupo Defeito,NAO
+170,900,Geral,NAO
+170,900,Grupo Oscar Calçados,NAO
+165,901,Ñ Grupo Foot Company,NAO
+184,902,Grupo Jô Calçados,NAO
+185,903,Grupo Jô Calçados,NAO
+120,904,Ñ Grupo Teste Ti,NAO
+18,905,Grupo Arezzo,NAO
+0,999,Ñ Grupo Oscar Sjc,NAO
+175,30a,Grupo Defeito,NAO
+198,ABY,Geral,NAO
+357,CDD,Grupo Oscar Calçados,NAO
+78,DEF,Grupo Defeito,NAO
+131,DES,Grupo Defeito,NAO
+130,FCA,Geral,NAO
+282,FIN,Geral,NAO
+62,FMG,Geral,NAO
+80,FSJ,Geral,NAO
+283,MTX,Geral,NAO
+174,OOC,Grupo Oscar Calçados,NAO
+367,osc,Geral,NAO
+202,OXY,Geral,NAO
+284,TRP,Geral,NAO
+2,1,Grupo Oscar Calçados,SIM
+3,2,Grupo Oscar Calçados,SIM
+7,3,Grupo Oscar Calçados,SIM
+8,4,Grupo Oscar Calçados,SIM
+11,5,Grupo Oscar Calçados,SIM
+17,6,Grupo Oscar Calçados,SIM
+12,7,Grupo Oscar Calçados,SIM
+177,8,Grupo Oscar Calçados,SIM
+13,9,Grupo Oscar Calçados,SIM
+14,10,Grupo Oscar Calçados,SIM
+74,11,Grupo Arezzo,SIM
+19,12,Grupo Arezzo,SIM
+20,13,Grupo Arezzo,SIM
+21,15,Grupo Victor Hugo,SIM
+15,16,Grupo Oscar Calçados,SIM
+16,17,Grupo Oscar Calçados,SIM
+22,18,Grupo Arezzo,SIM
+24,19,Grupo Oscar Calçados,SIM
+25,20,Grupo Oscar Calçados,SIM
+27,22,Grupo Oscar Calçados,SIM
+30,23,Grupo Oscar Calçados,SIM
+54,24,Grupo Stock Show Sjc,SIM
+72,26,Grupo Oscar Calçados,SIM
+100,28,Grupo Oscar Calçados,SIM
+134,30,Grupo Ecommerce,SIM
+61,31,Grupo Constantino,SIM
+64,32,Grupo Oscar Calçados,SIM
+68,34,Grupo Stock Show Mogi,SIM
+70,35,Grupo Stock Show Mogi,SIM
+67,36,Grupo Scarlen,SIM
+65,37,Grupo Scarlen,SIM
+66,38,Grupo Scarlen,SIM
+58,39,Grupo Oscar Calçados,SIM
+60,40,Grupo Arezzo,SIM
+183,41,Grupo Oscar Calçados,SIM
+69,42,Grupo Stock Show Mogi,SIM
+129,43,Grupo Oscar Calçados,SIM
+138,44,Grupo Oscar Calçados,SIM
+182,45,Grupo Oscar Calçados,SIM
+159,47,Grupo Oscar Calçados,SIM
+171,48,Grupo Oscar Calçados,SIM
+172,49,Grupo Oscar Calçados,SIM
+173,50,Grupo Victor Hugo,SIM
+186,53,Grupo Oscar Calçados,SIM
+187,54,Grupo Oscar Calçados,SIM
+188,55,Grupo Usaflex,SIM
+189,56,Grupo Usaflex,SIM
+190,57,Grupo Usaflex,SIM
+191,58,Grupo Oscar Calçados,SIM
+192,59,Grupo Usaflex,SIM
+193,60,Grupo Anacapri,SIM
+194,61,Grupo Oscar Calçados,SIM
+195,62,Grupo Oscar Calçados,SIM
+196,63,Grupo Oscar Calçados,SIM
+197,64,Grupo Oscar Calçados,SIM
+199,65,Grupo Oscar Calçados,SIM
+200,66,Grupo Oscar Calçados,SIM
+201,67,Grupo Oscar Calçados,SIM
+203,68,Grupo Oscar Calçados,SIM
+281,69,Grupo Oscar Calçados,NAO
+285,70,Grupo Anacapri,SIM
+286,71,Grupo Anacapri,SIM
+287,72,Grupo Oscar Calçados,SIM
+363,73,Grupo Anacapri,SIM
+364,74,Grupo Oscar Calçados,SIM
+370,75,Grupo Oscar Calçados,SIM
+377,76,Grupo Oscar Calçados,SIM
+136,92,Grupo Defeito,SIM
+166,100,Grupo Jô Calçados,SIM
+166,100,Grupo Ecommerce,SIM
+141,101,Grupo Oscar Calçados,SIM
+142,102,Grupo Oscar Calçados,SIM
+144,105,Grupo Oscar Calçados,SIM
+181,106,Grupo Oscar Calçados,SIM
+146,108,Grupo Oscar Calçados,SIM
+147,109,Grupo Oscar Calçados,SIM
+149,111,Grupo Oscar Calçados,SIM
+151,113,Grupo Oscar Calçados,SIM
+152,114,Grupo Oscar Calçados,SIM
+153,115,Grupo Oscar Calçados,SIM
+154,116,Grupo Oscar Calçados,SIM
+155,117,Grupo Oscar Calçados,SIM
+156,118,Grupo Oscar Calçados,SIM
+157,119,Grupo Oscar Calçados,SIM
+158,120,Grupo Oscar Calçados,SIM
+168,121,Grupo Oscar Calçados,SIM
+160,122,Grupo Jô Calçados,SIM
+167,123,Grupo Oscar Calçados,SIM
+161,124,Grupo Oscar Calçados,SIM
+162,125,Grupo Jô Calçados,SIM
+163,126,Grupo Jô Calçados,SIM
+145,127,Grupo Oscar Calçados,SIM
+164,128,Grupo Oscar Calçados,SIM
+223,201,Grupo Carioca Calçados,SIM
+277,202,Grupo Carioca Calçados,SIM
+260,203,Grupo Carioca Calçados,NAO
+256,204,Grupo Carioca Calçados,SIM
+362,205,Grupo Carioca Calçados,SIM
+258,208,Grupo Carioca Calçados,SIM
+259,209,Grupo Carioca Calçados,SIM
+261,211,Grupo Carioca Calçados,SIM
+262,212,Grupo Carioca Calçados,SIM
+263,214,Grupo Carioca Calçados,SIM
+264,215,Grupo Carioca Calçados,SIM
+265,216,Grupo Carioca Calçados,SIM
+266,217,Grupo Carioca Calçados,SIM
+267,218,Grupo Carioca Calçados,SIM
+268,219,Grupo Carioca Calçados,SIM
+269,221,Grupo Carioca Calçados,SIM
+270,223,Grupo Carioca Calçados,SIM
+271,224,Grupo Carioca Calçados,SIM
+272,225,Grupo Carioca Calçados,SIM
+273,226,Grupo Carioca Calçados,SIM
+274,227,Grupo Carioca Calçados,SIM
+275,228,Grupo Carioca Calçados,SIM
+378,296,Grupo Carioca Calçados,SIM
+276,297,Grupo Carioca Calçados,SIM
+279,298,Grupo Defeito,SIM
+77,299,Grupo Defeito,SIM
+300,300,Grupo Paquetá,SIM
+291,302,Grupo Paquetá,SIM
+292,306,Grupo Paquetá,SIM
+293,317,Grupo Paquetá,SIM
+294,318,Grupo Paquetá,SIM
+295,319,Grupo Paquetá,SIM
+296,323,Grupo Paquetá,SIM
+297,326,Grupo Paquetá,SIM
+298,327,Grupo Paquetá,SIM
+299,333,Grupo Paquetá,SIM
+301,337,Grupo Paquetá,SIM
+302,338,Grupo Paquetá,SIM
+303,339,Grupo Paquetá,SIM
+304,343,Grupo Paquetá,SIM
+305,345,Grupo Paquetá,SIM
+349,346,Grupo Paquetá,SIM
+306,347,Grupo Paquetá,SIM
+376,348,Grupo Paquetá,SIM
+350,349,Grupo Paquetá,SIM
+351,351,Grupo Paquetá,SIM
+308,352,Grupo Paquetá,SIM
+309,353,Grupo Paquetá,SIM
+352,355,Grupo Paquetá,SIM
+317,356,Grupo Paquetá,SIM
+353,359,Grupo Paquetá,SIM
+311,362,Grupo Paquetá,SIM
+354,363,Grupo Paquetá,SIM
+312,364,Grupo Paquetá,SIM
+314,367,Grupo Paquetá,SIM
+315,378,Grupo Paquetá,SIM
+316,382,Grupo Paquetá,SIM
+347,391,Grupo Paquetá,SIM
+359,399,Grupo Defeito,SIM
+318,404,Grupo Gaston,SIM
+319,411,Grupo Gaston,SIM
+320,413,Grupo Gaston,SIM
+321,414,Grupo Gaston,SIM
+322,415,Grupo Gaston,SIM
+323,417,Grupo Gaston,SIM
+324,419,Grupo Gaston,SIM
+325,421,Grupo Gaston,SIM
+326,422,Grupo Gaston,SIM
+327,423,Grupo Gaston,SIM
+328,424,Grupo Gaston,SIM
+329,426,Grupo Gaston,SIM
+330,427,Grupo Gaston,SIM
+331,428,Grupo Gaston,SIM
+332,430,Grupo Gaston,SIM
+333,431,Grupo Gaston,SIM
+334,432,Grupo Gaston,SIM
+335,434,Grupo Gaston,SIM
+336,436,Grupo Gaston,SIM
+337,439,Grupo Gaston,SIM
+338,440,Grupo Gaston,SIM
+339,441,Grupo Gaston,SIM
+340,444,Grupo Gaston,SIM
+341,445,Grupo Gaston,SIM
+342,446,Grupo Gaston,SIM
+343,447,Grupo Gaston,SIM
+344,449,Grupo Gaston,SIM
+288,501,Grupo Diadora,SIM
+289,502,Grupo Diadora,SIM
+360,503,Grupo Diadora,SIM
+369,600,Grupo Ecommerce,SIM
+371,001 - O&A GUARARAPES,Grupo O&A,SIM
+372,002 - O&A SHOPPING CARUARU,Grupo O&A,SIM
+375,003 - O&A TACARUNA,Grupo O&A,SIM
+373,004 - O&A CENTRO CARUARU,Grupo O&A,SIM
+374,005 - O&A PRAZERES,Grupo O&A,SIM
+380,052,Grupo Oscar Calçados,SIM
+381,077,Grupo Oscar Calçados,SIM
+382,078,Grupo Oscar Calçados,SIM
+384,079,Grupo Oscar Calçados,SIM
+385,229,Grupo Carioca Calçados,SIM
+383,450,Grupo Gaston,SIM

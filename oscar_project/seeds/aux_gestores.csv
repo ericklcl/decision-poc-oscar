@@ -1,0 +1,188 @@
+﻿GRUPO,BANDEIRA,DIRETOR,REGIONAL,CODIGO LOJA,DESCRICAO,Loja,IDESTABELECIMENTO
+F1,OSCAR,ROMILTON,LUIS AMERICO,1,Cl 2,001 - Cl 2,2
+F7,OSCAR,ROMILTON,LUIS AMERICO,2,Jp,002 - Jp,3
+F1,OSCAR,ROMILTON,LUIS AMERICO,3,Cl 1,003 - Cl 1,7
+F1,OSCAR,ROMILTON,MAURICIO,4,Jc 2,004 - Jc 2,8
+F7,OSCAR,ROMILTON,MAURICIO,5,Jc 1,005 - Jc 1,11
+F1,OSCAR,ROMILTON,LUIS AMERICO,6,Sh 2,006 - Sh 2,17
+F1,OSCAR,ROMILTON,PETERSON,7,Cn,007 - Cn,12
+F2,OSCAR,ERICSON,LEANDRO,8,Rio Preto Shopp,008 - Rio Preto Shopp,177
+F1,OSCAR,ROMILTON,PETERSON,9,Js,009 - Js,13
+F1,OSCAR,RENAN,CRISTIANO,10,Cd,010 - Cd,14
+F9,Arezzo,SONIA,VIVIANE,11,Arezzo Vale Sul Shopp,011 - Arezzo Vale Sul Shopp,74
+F9,Arezzo,SONIA,VIVIANE,12,Arezzo Center Vale,012 - Arezzo Center Vale,19
+F9,Arezzo,SONIA,VIVIANE,13,Arezzo Shopp Colinas,013 - Arezzo Shopp Colinas,20
+F9,VICTOR HUGO,SONIA,SUILA,15,Victor Hugo CV,015 - Victor Hugo CV,21
+F1,OSCAR,ROMILTON,THIAGO,16,Guara Ct,016 - Guara Ct,15
+F7,OSCAR,ROMILTON,PETERSON,17,Tênis VS,017 - Tênis VS,16
+F9,Arezzo,SONIA,VIVIANE,18,Arezzo Jacarei Shopp,018 - Arezzo Jacarei Shopp,22
+F1,OSCAR,ROMILTON,MAURICIO,19,Jc Sh,019 - Jc Sh,24
+F1,OSCAR,ROMILTON,ESTEFAN,20,Taub Shopp,020 - Taub Shopp,25
+F7,OSCAR,ROMILTON,LUIS AMERICO,22,Tenis Calçadão,022 - Tenis Calçadão,27
+F1,OSCAR,ROMILTON,THIAGO,23,Guará Shopp,023 - Guará Shopp,30
+F8,STOCK SHOW,ROMILTON,LUIS AMERICO,24,Stock Show SJC,024 - Stock Show SJC,54
+F1,OSCAR,ROMILTON,PETERSON,26,Vale Sul 2,026 - Vale Sul 2,72
+F1,OSCAR,ROMILTON,ESTEFAN,28,Taub Ct,028 - Taub Ct,100
+F1,OSCAR,RENAN,BACKOFFICE,30,E-commerce,030 - E-commerce,134
+F8,CONSTANTINO,ROMILTON,MAURICIO,31,Constantino Mogi,031 - Constantino Mogi,61
+F1,OSCAR,ROMILTON,MAURICIO,32,Mogi Shopp,032 - Mogi Shopp,64
+F8,STOCK SHOW,HELENA,ARTEMIS,34,Stock Show BC,034 - Stock Show BC,68
+F8,STOCK SHOW,HELENA,ARTEMIS,35,Stock Show Sz,035 - Stock Show Sz,70
+F8,SCARLEN,HELENA,ARTEMIS,36,Scarlen Shopp Suzan,036 - Scarlen Shopp Suzan,67
+F8,SCARLEN,HELENA,ARTEMIS,37,Scarlen Mogi Centro,037 - Scarlen Mogi Centro,65
+F8,SCARLEN,HELENA,ARTEMIS,38,Scarlen Mogi Shopp,038 - Scarlen Mogi Shopp,66
+F1,OSCAR,ROMILTON,MAURICIO,39,CL Mg,039 - CL Mg,58
+F9,Arezzo,HELENA,ARTEMIS,40,Arezzo Shopp Mogi,040 - Arezzo Shopp Mogi,60
+F2,OSCAR,ERICSON,LEANDRO,41,Rio Preto Ct,041 - Rio Preto Ct,183
+F8,STOCK SHOW,HELENA,ARTEMIS,42,Stock Show Poá,042 - Stock Show Poá,69
+F1,OSCAR,ROMILTON,MAURICIO,43,Suzano Shopp,043 - Suzano Shopp,129
+F1,OSCAR,ROMILTON,ESTEFAN,44,Caragua Shopp,044 - Caragua Shopp,138
+F2,OSCAR,ERICSON,LEANDRO,45,Araçatuba,045 - Araçatuba,182
+F8,CONSTANTINO,ROMILTON,DIOGENES,46,Constantino SJC,046 - Constantino SJC,140
+F7,OSCAR,ROMILTON,ESTEFAN,47,Pinda Shopp,047 - Pinda Shopp,159
+F1,OSCAR,ROMILTON,ESTEFAN,48,Pinda Ct,048 - Pinda Ct,171
+F1,OSCAR,ROMILTON,THIAGO,49,Lorena,049 - Lorena,172
+F9,VICTOR HUGO,SONIA,SUILA,50,Victor Hugo CN,050 - Victor Hugo CN,173
+geral,OSCAR,ERICSON,JOÃO PAULO,52,Outlet Oscar,052 - Outlet Bauru Calcados Ltda,380
+F7,OSCAR,ERICSON,JOÃO PAULO,53,Bauru Shopp,053 - Bauru Shopp,186
+F2,OSCAR,ERICSON,RODRIGO,54,Ribeirão Centro,054 - Ribeirão Centro,187
+F9,USAFLEX,HELENA,ARTEMIS,55,Usaflex Mogi Shopp,055 - Usaflex Mogi Shopp,188
+F9,USAFLEX,HELENA,ARTEMIS,56,Usaflex Guarulhos Shopp,056 - Usaflex Guarulhos Shopp,189
+F9,USAFLEX,HELENA,ARTEMIS,57,Usaflex Suzano Shopp,057 - Usaflex Suzano Shopp,190
+F2,OSCAR,ERICSON,RODRIGO,58,Ribeirão Shopp,058 - Ribeirão Shopp,191
+F9,USAFLEX,HELENA,ARTEMIS,59,Usaflex Tatuapé Shopp,059 - Usaflex Tatuapé Shopp,192
+F9,ANA CAPRI,HELENA,ARTEMIS,60,Anacapri Suzano Shopp,060 - Anacapri Suzano Shopp,193
+F2,OSCAR,ERICSON,JOÃO PAULO,61,Jundiaí,061 - Jundiaí,194
+F2,OSCAR,ERICSON,JOÃO PAULO,62,Piracicaba,062 - Piracicaba,195
+F2,OSCAR,ERICSON,JOÃO PAULO,63,Sorocaba,063 - Sorocaba,196
+F2,OSCAR,ERICSON,CLAUDIO,64,Araraquara,064 - Araraquara,197
+F2,OSCAR,ERICSON,CLAUDIO,65,Mogi Mirim,065 - Mogi Mirim,199
+F2,OSCAR,ERICSON,CLAUDIO,66,Mogi Guaçu,066 - Mogi Guaçu,200
+F1,OSCAR,ROMILTON,PETERSON,67,Oriente Shopp,067 - Oriente Shopp,201
+F2,OSCAR,ERICSON,JOÃO PAULO,68,Bauru Ct,068 - Bauru Ct,203
+F2,OSCAR,ERICSON,CLAUDIO,69,Piracicaba,069 - Piracicaba,281
+F9,ANA CAPRI,HELENA,ARTEMIS,70,Anacapri CenterVale,070 - Anacapri CenterVale,285
+F9,ANA CAPRI,HELENA,ARTEMIS,71,Anacapri ValeSul,071 - Anacapri ValeSul,286
+F2,OSCAR,ERICSON,RODRIGO,72,Novo Shopp Ribeirão,072 - Novo Shopp Ribeirão,287
+F9,ANA CAPRI,HELENA,ARTEMIS,73,ANA CAPRI SHOPPING ORIENTE,073 - ANA CAPRI SHOPPING ORIENTE,363
+F2,OSCAR,ERICSON,JOÃO PAULO,74,SHOPPING PIRACICABA,074 - SHOPPING PIRACICABA,364
+F1,OSCAR,ROMILTON,THIAGO,75,cruzeiro,075 - Oscar cruzeiro,370
+F7,OSCAR,ROMILTON,LUIS AMERICO,76,Outlet Oscar,076 - Outlet Oscar Motorama,377
+F2,OSCAR,ERICSON,JOÃO PAULO,77,Jundiaí,077 - Jundiaf Maxxi Shop,381
+F2,OSCAR,ERICSON,JOÃO PAULO,78,Bauru,078 - Bauru Boulevard Shopp,382
+F2,OSCAR,ERICSON,JOÃO PAULO,101,Botucatu,101 - Botucatu,141
+F2,OSCAR,ERICSON,RODRIGO,102,Ituiutaba,102 - Ituiutaba,142
+F1,Jo,ROMILTON,DIOGENES,104,Jô - Araçatuba,104 - Jô Aracatuba,143
+F2,OSCAR,ERICSON,RODRIGO,105,Uberaba,105 - Uberaba,144
+F2,OSCAR,ERICSON,LEANDRO,106,Rio Preto CL1,106 - Rio Preto CL1,181
+F2,OSCAR,ERICSON,LEANDRO,108,Votuporanga,108 - Votuporanga,146
+F2,OSCAR,ERICSON,CLAUDIO,109,Araraquara Mega,109 - Araraquara Mega,147
+F2,OSCAR,ERICSON,RODRIGO,111,Franca,111 - Franca,149
+F2,OSCAR,ERICSON,RODRIGO,113,Uberlândia,113 - Uberlândia,151
+F2,OSCAR,ERICSON,CLAUDIO,114,Limeira,114 - Limeira,152
+F2,OSCAR,ERICSON,JOÃO PAULO,115,Ourinhos,115 - Ourinhos,153
+F2,OSCAR,ERICSON,CLAUDIO,116,São Carlos,116 - São Carlos,154
+F2,OSCAR,ERICSON,JOÃO PAULO,117,Bauru,117 - Bauru,155
+F2,OSCAR,ERICSON,LEANDRO,118,Catanduva,118 - Catanduva,156
+F2,OSCAR,ERICSON,RODRIGO,119,Barretos,119 - Barretos,157
+F2,OSCAR,ERICSON,LEANDRO,120,Presidente Prudente,120 - Presidente Prudente,158
+F7,OSCAR,ROMILTON,ESTEFAN,121,Caçapava,121 - Caçapava,168
+F1,Jo,ROMILTON,ESTEFAN,122,Jô Taubaté Shopp,122 - Jô Taubaté Shopp,160
+F1,OSCAR,ROMILTON,THIAGO,123,Resende Ct,123 - Resende Ct,167
+F1,Jo,ROMILTON,LUIS AMERICO,124,Jô CL1,124 - Jô CL1,161
+F1,Jo,ROMILTON,LUIS AMERICO,125,Jô CL2,125 - Jô CL2,162
+F1,Jo,ROMILTON,THIAGO,126,Jô Guaratinguetá,126 - Jô Guaratinguetá,163
+F1,OSCAR,ROMILTON,MAURICIO,127,Jô Jacareí,127 - Jô Jacareí,145
+F1,Jo,ROMILTON,ESTEFAN,128,Jo Taubate Ct,128 - Jo Taubate Ct,164
+F1,Jo,ROMILTON,MAURICIO,129,Jo - Js,129,169
+F3,CARIOCA,CERUTTI,BERNARDO,201,Matriz Carioca,201 - Matriz Carioca,223
+F3,CARIOCA,CERUTTI,BERNARDO,202,Joinville Carioca,202 - Joinville Carioca,277
+F3,CARIOCA,CERUTTI,BERNARDO,203,OUTLET CARIOCA,203 - Outlet Carioca CalCados,260
+F3,CARIOCA,CERUTTI,BERNARDO,204,Bom Passo Carioca,204 - Bom Passo Carioca,256
+F3,CARIOCA,CERUTTI,BERNARDO,205,Ingleses Carioca,205 - Ingleses Carioca,362
+F3,CARIOCA,CERUTTI,BERNARDO,207,Tiradentes Ct Carioca,207 - tiradentes,257
+F3,CARIOCA,CERUTTI,BERNARDO,208,Balneário Carioca,208 - Balneário Carioca,258
+F3,CARIOCA,CERUTTI,BERNARDO,209,Schmidt Cl 1 Ct Carioca,209 - Schmidt Cl 1 Ct Carioca,259
+F3,CARIOCA,CERUTTI,BERNARDO,211,Itaguaçú 1 Shopp Carioca,211 - Itaguaçú 1 Shopp Carioca,261
+F3,CARIOCA,CERUTTI,BERNARDO,212,Kobrasol Carioca,212 - Kobrasol Carioca,262
+F3,CARIOCA,CERUTTI,BERNARDO,214,Itajaí Carioca,214 - Itajaí Carioca,263
+F3,CARIOCA,CERUTTI,BERNARDO,215,Schmidt Cl 2 Ct Carioca,215 - Schmidt Cl 2 Ct Carioca,264
+F3,CARIOCA,CERUTTI,BERNARDO,216,Sports Deodoro Ct Carioca,216 - Sports Deodoro Ct Carioca,265
+F3,CARIOCA,CERUTTI,BERNARDO,217,Sports Itaguaçú Shopp Carioca,217 - Sports Itaguaçú Shopp Carioca,266
+F3,CARIOCA,CERUTTI,BERNARDO,218,Villa Romana Shopp Carioca,218 - Villa Romana Shopp Carioca,267
+F3,CARIOCA,CERUTTI,BERNARDO,219,Schmidt Cl 3 Ct Carioca,219 - Schmidt Cl 3 Ct Carioca,268
+F3,CARIOCA,CERUTTI,BERNARDO,221,Deodoro Ct Carioca,221 - Deodoro Ct Carioca,269
+F3,CARIOCA,CERUTTI,BERNARDO,223,Itaguaçú 2 Shopp Carioca,223 - Itaguaçú 2 Shopp Carioca,270
+F3,CARIOCA,CERUTTI,BERNARDO,224,Rua Sete Ct Carioca,224 - Rua Sete Ct Carioca,271
+F3,CARIOCA,CERUTTI,BERNARDO,225,Palhoça Carioca,225 - Palhoça Carioca,272
+F3,CARIOCA,CERUTTI,BERNARDO,226,Continente Shopp Carioca,226 - Continente Shopp Carioca,273
+F3,CARIOCA,CERUTTI,BERNARDO,227,Biguaçu Carioca,227 - Biguaçu Carioca,274
+F3,CARIOCA,CERUTTI,BERNARDO,228,Forquilhinhas Carioca,228 - Forquilhinhas Carioca,275
+F4,PAQUETA,CERUTTI,JORGE,301,Paquetá Canoas,301 - Paquetá Canoas,355
+F4,PAQUETA,CERUTTI,CLOVIS,302,Paquetá Voluntários,302 - Paquetá Voluntários,291
+F4,PAQUETA,CERUTTI,JORGE,303,Paquetá Ecommerce,Ecommerce,356
+F4,PAQUETA,CERUTTI,CLOVIS,306,Paquetá Park Shopp Canoas,306 - Paquetá Park Shopp Canoas,292
+F4,PAQUETA,CERUTTI,JORGE,316,Paquetá Loja Fechada,316 - Paquetá fechada,345
+F4,PAQUETA,CERUTTI,CLOVIS,317,Paquetá Protásio Alves,317 - Paquetá Protásio Alves,293
+F4,PAQUETA,CERUTTI,CLOVIS,318,Paquetá Cachoeirinha,318 - Paquetá Cachoeirinha,294
+F4,PAQUETA,CERUTTI,CLOVIS,319,Paquetá Gravataí,319 - Paquetá Gravataí,295
+F4,PAQUETA,CERUTTI,JORGE,322,Paquetá Loja Fechada,322 - Paquetá centro,346
+F4,PAQUETA,CERUTTI,CLOVIS,323,Paquetá São Leopoldo,323 - Paquetá São Leopoldo,296
+F4,PAQUETA,CERUTTI,CLOVIS,326,Paquetá Praia de Belas,326 - Paquetá Praia de Belas,297
+F4,PAQUETA,CERUTTI,CLOVIS,327,Paquetá Lindóia Shopp,327 - Paquetá Lindóia Shopp,298
+F4,PAQUETA,CERUTTI,JORGE,329,Paquetá Joinville,329 - Paquetá Joinville,348
+F4,PAQUETA,CERUTTI,CLOVIS,333,Paquetá Esquina Democrática,333 - Paquetá Esquina Democrática,299
+F4,PAQUETA,CERUTTI,CLOVIS,337,Paquetá Canoas Shopp,337 - Paquetá Canoas Shopp,301
+F4,PAQUETA,CERUTTI,JORGE,338,Paquetá Esportes Shopp Bourbon Ipiranga,338 - Paquetá Esportes Shopp Bourbon Ipiranga,302
+F4,PAQUETA,CERUTTI,CLOVIS,339,Paquetá Shopp Novo Hamburgo,339 - Paquetá Shopp Novo Hamburgo,303
+F4,PAQUETA,CERUTTI,JORGE,343,Paquetá Esportes Shopp Iguatemi,343 - Paquetá Esportes Shopp Iguatemi,304
+F4,PAQUETA,CERUTTI,JORGE,345,Paquetá Esportes Shopp Canoas,345 - Paquetá Esportes Shopp Canoas,305
+F4,PAQUETA,CERUTTI,KATIANE,346,Paquetá Jaraguá do Sul,346 - Paquetá Jaraguá do Sul,349
+F4,PAQUETA,CERUTTI,JORGE,347,Paquetá Esportes Shopp Iguatemi Caxias do Sul,347 - Paquetá Esportes Shopp Iguatemi Caxias do Sul,306
+F4,PAQUETA,CERUTTI,JORGE,348,Paquetá Gramado,348 - Paquetá Gramado,376
+F4,PAQUETA,CERUTTI,KATIANE,349,Paquetá Esportes Shopp Villa Romana Florianópolis,349 - Paquetá Esportes Shopp Villa Romana Florianópolis,350
+F4,PAQUETA,CERUTTI,KATIANE,351,Paquetá Blumenau,351 - Paquetá Blumenau,351
+F4,PAQUETA,CERUTTI,CLOVIS,352,Paquetá Barra Shopp Sul,352 - Paquetá Barra Shopp Sul,308
+F4,PAQUETA,CERUTTI,JORGE,353,Paquetá Esportes Barra Shopp Sul,353 - Paquetá Esportes Barra Shopp Sul,309
+F4,PAQUETA,CERUTTI,JORGE,355,Paquetá Esportes Shopp Bella Citta Passo Fundo,355 - Paquetá Esportes Shopp Bella Citta Passo Fundo,352
+F4,PAQUETA,CERUTTI,JORGE,356,Paquetá Andradas,356 - Paquetá Andradas,317
+F4,PAQUETA,CERUTTI,KATIANE,359,Paquetá Garten Shopp Joinville,359 - Paquetá Garten Shopp Joinville,353
+F4,PAQUETA,CERUTTI,CLOVIS,360,Paquetá Shopp Rua da Praia,360 - Paquetá Shopp Rua da Praia,310
+F4,PAQUETA,CERUTTI,JORGE,362,Paquetá Esportes Shopp Royal Plaza Santa Maria,362 - Paquetá Esportes Shopp Royal Plaza Santa Maria,311
+F4,PAQUETA,CERUTTI,KATIANE,363,Paquetá Norte Shopp Blumenau,363 - Paquetá Norte Shopp Blumenau,354
+F4,PAQUETA,CERUTTI,CLOVIS,364,Paquetá Cassol Center Lar,364 - Paquetá Cassol Center Lar,312
+F4,PAQUETA,CERUTTI,JORGE,365,Paquetá Bourbon Ipiranga,365 - Paquetá Ipiranga,313
+F4,PAQUETA,CERUTTI,CLOVIS,367,Paquetá Esportes Shopp Bourbon Wallig,367 - Paquetá Esportes Shopp Bourbon Wallig,314
+F4,PAQUETA,CERUTTI,CLOVIS,378,Paquetá Shopp Pelotas,378 - Paquetá Shopp Pelotas,315
+F4,PAQUETA,CERUTTI,CLOVIS,382,Paquetá Shopp Gravataí,382 - Paquetá Shopp Gravataí,316
+F4,PAQUETA,CERUTTI,KATIANE,391,Paquetá Camburiú,391 - Paquetá Camburiú,347
+F4,GASTON,CERUTTI,PATRICIA,404,Gaston Andradas,404 - Gaston Andradas,318
+F4,GASTON,CERUTTI,CLOVIS,411,Gaston Rio Grande,411 - Gaston Rio Grande,319
+F4,GASTON,CERUTTI,PATRICIA,413,Gaston Otávio Rocha,413 - Gaston Otávio Rocha,320
+F4,GASTON,CERUTTI,PATRICIA,414,Gaston Cachoeirinha F. Cunha 1077,414 - Gaston Cachoeirinha F. Cunha 1077,321
+F4,GASTON,CERUTTI,PATRICIA,415,Gaston Azenha,415 - Gaston Azenha,322
+F4,GASTON,CERUTTI,PATRICIA,417,Gaston Gravataí CTO,417 - Gaston Gravataí CTO,323
+F4,GASTON,CERUTTI,PATRICIA,419,Gaston Shopp Iguatemi,419 - Gaston Shopp Iguatemi,324
+F4,GASTON,CERUTTI,PATRICIA,421,Gaston Canoas Shopp,421 - Gaston Canoas Shopp,325
+F4,GASTON,CERUTTI,PATRICIA,422,Gaston Bourbon Assis Brasil,422 - Gaston Bourbon Assis Brasil,326
+F4,GASTON,CERUTTI,PATRICIA,423,Gaston Assis Brasil,423 - Gaston Assis Brasil,327
+F4,GASTON,CERUTTI,PATRICIA,424,Gaston Alvorada,424 - Gaston Alvorada,328
+F4,GASTON,CERUTTI,PATRICIA,426,Gaston Cavalhada,426 - Gaston Cavalhada,329
+F4,GASTON,CERUTTI,PATRICIA,427,Gaston Carrefour Partenon,427 - Gaston Carrefour Partenon,330
+F4,GASTON,CERUTTI,PATRICIA,428,Gaston Carrefour Ubirici,428 - Gaston Carrefour Ubirici,331
+F4,GASTON,CERUTTI,PATRICIA,430,Gaston Shopp Total,430 - Gaston Shopp Total,332
+F4,GASTON,CERUTTI,PATRICIA,431,Gaston Calçadão Canoas,431 - Gaston Calçadão Canoas,333
+F4,GASTON,CERUTTI,PATRICIA,432,Gaston Cachoeirinha F. Cunha 4001,432 - Gaston Cachoeirinha F. Cunha 4001,334
+F4,GASTON,CERUTTI,PATRICIA,434,Gaston Sapucaia do Sul,434 - Gaston Sapucaia do Sul,335
+F4,GASTON,CERUTTI,PATRICIA,436,Gaston Viamão,436 - Gaston Viamão,336
+F4,GASTON,CERUTTI,PATRICIA,439,Gaston Carrefour Sertorio,439 - Gaston Carrefour Sertorio,337
+F4,GASTON,CERUTTI,PATRICIA,440,Gaston Barra Shopp Sul,440 - Gaston Barra Shopp Sul,338
+F4,GASTON,CERUTTI,PATRICIA,441,Gaston Wallig,441 - Gaston Wallig,339
+F4,GASTON,CERUTTI,CLOVIS,444,Gaston Shopp Pelotas,444 - Gaston Shopp Pelotas,340
+F4,GASTON,CERUTTI,PATRICIA,445,Gaston Shopp Gravataí,445 - Gaston Shopp Gravataí,341
+F4,GASTON,CERUTTI,CLOVIS,446,Gaston Shopp Rio Grande,446 - Gaston Shopp Rio Grande,342
+F4,GASTON,CERUTTI,PATRICIA,447,Gaston Park Shopp Canoas,447 - Gaston Park Shopp Canoas,343
+F4,GASTON,CERUTTI,JORGE,449,Gaston Shopp Santa Maria,449 - Gaston shopp Santa Maria,344
+F7,OSCAR,ERICSON,LEANDRO,079,079 - Outlet Pres. Prudente,079 - Outlet Pres. Prudente,384
+F3,CARIOCA,CERUTTI,BERNARDO,229,229 - Ingleses Carioca 2,229 - Ingleses Carioca 2,385
+F4,GASTON,CERUTTI,JORGE,450,450 - Gaston Shopp Caxias,450 - Gaston Shopp Caxias,383
