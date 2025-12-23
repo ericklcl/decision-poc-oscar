@@ -184,4 +184,932 @@ sources:
           - name: _dms_loaded_at
             description: ''
             data_type: timestamp without time zone
-        
+      - name: mstore_t_situacaoproduto
+        description: Tabela do MEGA que traz informações sobre a situacao do produto. (AWS DMS - Atualizado em tempo real)  
+      - name: mstore_t_produto
+        description: Tabela do MEGA com informações detalhadas sobre produtos no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idproduto
+            description: ''
+            data_type: numeric
+          - name: dataultimavenda
+            description: ''
+            data_type: timestamp without time zone
+          - name: dataultimaentrada
+            description: ''
+            data_type: timestamp without time zone
+          - name: foradelinha
+            description: ''
+            data_type: character varying
+          - name: nome
+            description: ''
+            data_type: character varying
+          - name: nomeimpressao
+            description: ''
+            data_type: character varying
+          - name: idreferenciaproduto
+            description: ''
+            data_type: numeric
+          - name: idcor
+            description: ''
+            data_type: numeric
+          - name: idtamanho
+            description: ''
+            data_type: numeric
+          - name: valorcusto
+            description: ''
+            data_type: numeric
+          - name: valorcomfrete
+            description: ''
+            data_type: numeric
+          - name: precobase
+            description: ''
+            data_type: numeric
+          - name: dataforadelinha
+            description: ''
+            data_type: timestamp without time zone
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: idproduto_old
+            description: ''
+            data_type: numeric
+          - name: codigobarramigracao
+            description: ''
+            data_type: character varying
+          - name: dataultimaalteracao
+            description: ''
+            data_type: timestamp without time zone
+          - name: idcondpagultimaentrada
+            description: ''
+            data_type: numeric
+          - name: premio
+            description: ''
+            data_type: numeric
+          - name: pontos
+            description: ''
+            data_type: numeric
+          - name: closeout
+            description: ''
+            data_type: character varying
+          - name: dt_envio_ecommerce
+            description: ''
+            data_type: timestamp without time zone
+          - name: ecommerce
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: iddepartamento
+            description: ''
+            data_type: numeric
+          - name: dataultimamovimentacao
+            description: ''
+            data_type: timestamp without time zone
+          - name: ean
+            description: ''
+            data_type: character varying
+          - name: codigoalfa
+            description: ''
+            data_type: character varying
+          - name: precovenda
+            description: ''
+            data_type: numeric
+          - name: primeiroprecovenda
+            description: ''
+            data_type: numeric
+          - name: migradoizio
+            description: ''
+            data_type: numeric
+          - name: visivel_ecommerce
+            description: ''
+            data_type: character varying
+          - name: valorcustomedio
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: codigoexternopaqueta
+            description: ''
+            data_type: character varying
+          - name: sku_paqueta
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_referenciaproduto
+        description: Tabela do MEGA que registra referências de produtos no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idreferenciaproduto
+            description: ''
+            data_type: numeric
+          - name: referencia
+            description: ''
+            data_type: character varying
+          - name: idgrupoproduto
+            description: ''
+            data_type: numeric
+          - name: idprodutogenerico
+            description: ''
+            data_type: numeric
+          - name: idprodutoespecifico
+            description: ''
+            data_type: numeric
+          - name: idmarca
+            description: ''
+            data_type: numeric
+          - name: idmaterial
+            description: ''
+            data_type: numeric
+          - name: idunidade
+            description: ''
+            data_type: numeric
+          - name: idcomprador
+            description: ''
+            data_type: numeric
+          - name: tiponacionalidade
+            description: ''
+            data_type: character varying
+          - name: tipocodigobarra
+            description: ''
+            data_type: numeric
+          - name: idsecao
+            description: ''
+            data_type: numeric
+          - name: descricaoresumida
+            description: ''
+            data_type: character varying
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: idgrade
+            description: ''
+            data_type: numeric
+          - name: idtributacao
+            description: ''
+            data_type: numeric
+          - name: idfornecedor
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: substituicaotributaria
+            description: ''
+            data_type: character varying
+          - name: ncm
+            description: ''
+            data_type: character varying
+          - name: origemproduto
+            description: ''
+            data_type: character varying
+          - name: reducaobaseicms
+            description: ''
+            data_type: numeric
+          - name: tipo
+            description: ''
+            data_type: character varying
+          - name: cest
+            description: ''
+            data_type: character varying
+          - name: urlecommerce
+            description: ''
+            data_type: character varying
+          - name: datacadastro
+            description: ''
+            data_type: timestamp without time zone
+          - name: dataprimeiraentrada
+            description: ''
+            data_type: timestamp without time zone
+          - name: statusprodutonovo
+            description: ''
+            data_type: character varying
+          - name: dataprodutoantigo
+            description: ''
+            data_type: timestamp without time zone
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: produtodiadora
+            description: ''
+            data_type: smallint
+          - name: codigoexternopaqueta
+            description: ''
+            data_type: character varying
+          - name: cstpiscofinsvenda
+            description: ''
+            data_type: character varying
+          - name: cstpiscofinsremessa
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_cor
+        description: Tabela do MEGA com dados sobre cores de produtos no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idcor
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_history_t_produtodanota
+        description: Tabela de histórico da T_PRODUTODANOTA
+        columns:
+          - name: idprodutodanota
+            description: ''
+            data_type: numeric
+          - name: ipi
+            description: ''
+            data_type: numeric
+          - name: precodevenda
+            description: ''
+            data_type: numeric
+          - name: precodecusto
+            description: ''
+            data_type: numeric
+          - name: quantidade
+            description: ''
+            data_type: numeric
+          - name: idproduto
+            description: ''
+            data_type: numeric
+          - name: idnotafiscal
+            description: ''
+            data_type: numeric
+          - name: precocustopedido
+            description: ''
+            data_type: numeric
+          - name: quantidadeitensextra
+            description: ''
+            data_type: numeric
+          - name: quantidadeitensperdida
+            description: ''
+            data_type: numeric
+          - name: idpedido
+            description: ''
+            data_type: numeric
+          - name: acrescimo
+            description: ''
+            data_type: numeric
+          - name: desconto
+            description: ''
+            data_type: numeric
+          - name: codigobarra
+            description: ''
+            data_type: character varying
+          - name: notafiscalcancelada
+            description: ''
+            data_type: character varying
+          - name: foradelinha
+            description: ''
+            data_type: character varying
+          - name: precodecustoreal
+            description: ''
+            data_type: numeric
+          - name: closeout
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: cprod
+            description: ''
+            data_type: character varying
+          - name: ncm
+            description: ''
+            data_type: character varying
+          - name: origem
+            description: ''
+            data_type: character varying
+          - name: op
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_notafiscal
+        description: Tabela do MEGA que traz informações sobre notas fiscais. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idnotafiscal
+            description: ''
+            data_type: numeric
+          - name: numeronota
+            description: ''
+            data_type: character varying
+          - name: icms
+            description: ''
+            data_type: numeric
+          - name: valorbaseicms
+            description: ''
+            data_type: numeric
+          - name: valoricms
+            description: ''
+            data_type: numeric
+          - name: valorbaseicmssubstituicao
+            description: ''
+            data_type: numeric
+          - name: valoricmssubstituicao
+            description: ''
+            data_type: numeric
+          - name: valortotalprodutos
+            description: ''
+            data_type: numeric
+          - name: valorfrete
+            description: ''
+            data_type: numeric
+          - name: valorseguro
+            description: ''
+            data_type: numeric
+          - name: outrasdespesas
+            description: ''
+            data_type: numeric
+          - name: valortotalipi
+            description: ''
+            data_type: numeric
+          - name: valortotalnota
+            description: ''
+            data_type: numeric
+          - name: observacao
+            description: ''
+            data_type: character varying
+          - name: data
+            description: ''
+            data_type: timestamp without time zone
+          - name: idestabelecimento
+            description: ''
+            data_type: numeric
+          - name: dataemissao
+            description: ''
+            data_type: timestamp without time zone
+          - name: dataconfirmacao
+            description: ''
+            data_type: timestamp without time zone
+          - name: idusuarioconfirmacao
+            description: ''
+            data_type: numeric
+          - name: idconhecimento
+            description: ''
+            data_type: numeric
+          - name: jaalteroucodigobarra
+            description: ''
+            data_type: character varying
+          - name: idusuariocadastro
+            description: ''
+            data_type: numeric
+          - name: divergencias
+            description: ''
+            data_type: character varying
+          - name: idusuariocancelamento
+            description: ''
+            data_type: numeric
+          - name: datacancelamento
+            description: ''
+            data_type: timestamp without time zone
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: porcentagemdesconto
+            description: ''
+            data_type: numeric
+          - name: descricaodivergencias
+            description: ''
+            data_type: character varying
+          - name: notacarteira
+            description: ''
+            data_type: character varying
+          - name: tipoipi
+            description: ''
+            data_type: character varying
+          - name: idfornecedor
+            description: ''
+            data_type: numeric
+          - name: cnpj
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: numeronfe
+            description: ''
+            data_type: character varying
+          - name: porcentagemdereducaodebase
+            description: ''
+            data_type: numeric
+          - name: usadonfedevolucao
+            description: ''
+            data_type: character varying
+          - name: isbonificado
+            description: ''
+            data_type: character varying
+          - name: serie
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_history_t_notafiscal
+        description: Tabela de histórico da T_NOTAFISCAL
+        columns:
+          - name: idnotafiscal
+            description: ''
+            data_type: numeric
+          - name: numeronota
+            description: ''
+            data_type: character varying
+          - name: icms
+            description: ''
+            data_type: numeric
+          - name: valorbaseicms
+            description: ''
+            data_type: numeric
+          - name: valoricms
+            description: ''
+            data_type: numeric
+          - name: valorbaseicmssubstituicao
+            description: ''
+            data_type: numeric
+          - name: valoricmssubstituicao
+            description: ''
+            data_type: numeric
+          - name: valortotalprodutos
+            description: ''
+            data_type: numeric
+          - name: valorfrete
+            description: ''
+            data_type: numeric
+          - name: valorseguro
+            description: ''
+            data_type: numeric
+          - name: outrasdespesas
+            description: ''
+            data_type: numeric
+          - name: valortotalipi
+            description: ''
+            data_type: numeric
+          - name: valortotalnota
+            description: ''
+            data_type: numeric
+          - name: observacao
+            description: ''
+            data_type: character varying
+          - name: data
+            description: ''
+            data_type: timestamp without time zone
+          - name: idestabelecimento
+            description: ''
+            data_type: numeric
+          - name: dataemissao
+            description: ''
+            data_type: timestamp without time zone
+          - name: dataconfirmacao
+            description: ''
+            data_type: timestamp without time zone
+          - name: idusuarioconfirmacao
+            description: ''
+            data_type: numeric
+          - name: idconhecimento
+            description: ''
+            data_type: numeric
+          - name: jaalteroucodigobarra
+            description: ''
+            data_type: character varying
+          - name: idusuariocadastro
+            description: ''
+            data_type: numeric
+          - name: divergencias
+            description: ''
+            data_type: character varying
+          - name: idusuariocancelamento
+            description: ''
+            data_type: numeric
+          - name: datacancelamento
+            description: ''
+            data_type: timestamp without time zone
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: porcentagemdesconto
+            description: ''
+            data_type: numeric
+          - name: descricaodivergencias
+            description: ''
+            data_type: character varying
+          - name: notacarteira
+            description: ''
+            data_type: character varying
+          - name: tipoipi
+            description: ''
+            data_type: character varying
+          - name: idfornecedor
+            description: ''
+            data_type: numeric
+          - name: cnpj
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: numeronfe
+            description: ''
+            data_type: character varying
+          - name: porcentagemdereducaodebase
+            description: ''
+            data_type: numeric
+          - name: usadonfedevolucao
+            description: ''
+            data_type: character varying
+          - name: isbonificado
+            description: ''
+            data_type: character varying
+          - name: serie
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+          - name: op
+            description: ''
+            data_type: character varying
+      - name: mstore_t_fornecedor
+        description: Tabela do MEGA que traz informações sobre fornecedores com maior detalhamento. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idfornecedor
+            description: ''
+            data_type: numeric
+          - name: idtipopessoa
+            description: ''
+            data_type: numeric
+          - name: idatividade
+            description: ''
+            data_type: numeric
+          - name: idconjuge
+            description: ''
+            data_type: numeric
+          - name: idestadocivil
+            description: ''
+            data_type: numeric
+          - name: idendereco
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: cpfcnpj
+            description: ''
+            data_type: character varying
+          - name: rg
+            description: ''
+            data_type: character varying
+          - name: nome
+            description: ''
+            data_type: character varying
+          - name: nomereduzido
+            description: ''
+            data_type: character varying
+          - name: sexo
+            description: ''
+            data_type: character varying
+          - name: mae
+            description: ''
+            data_type: character varying
+          - name: pai
+            description: ''
+            data_type: character varying
+          - name: datanascimento
+            description: ''
+            data_type: timestamp without time zone
+          - name: inscricaoestadual
+            description: ''
+            data_type: character varying
+          - name: observacao
+            description: ''
+            data_type: character varying
+          - name: idfornecedorecommerce
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_tamanho
+        description: Tabela do MEGA com informações sobre tamanhos de produtos no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idtamanho
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: ordemtamanho
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: valorfloat
+            description: ''
+            data_type: numeric
+          - name: descricaoecommerce
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_departamento
+        description: Tabela do MEGA com informações sobre departamentos no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: iddepartamento
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_produtogenerico
+        description: Tabela do MEGA com dados genéricos de produtos no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idprodutogenerico
+            description: ''
+            data_type: numeric
+          - name: idgrupoproduto
+            description: ''
+            data_type: numeric
+          - name: markupminimo
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: idfamiliaecommerce
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_produtoespecifico
+        description: Tabela do MEGA que contém dados específicos de produtos no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idprodutoespecifico
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: idprodutogenerico
+            description: ''
+            data_type: numeric
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: idsubfamiliaecommerce
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_marca
+        description: Tabela do MEGA com dados sobre marcas de produtos no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idmarca
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: idmarcaecommerce
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_secao
+        description: Tabela do MEGA que traz informações sobre a hierarquia seção de produtos. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idsecao
+            description: ''
+            data_type: numeric
+          - name: markupminimo
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: idsecaoecommerce
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_grupoproduto
+        description: Tabela do MEGA que traz informações sobre a hierarquia grupo de produtos. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idgrupoproduto
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: idgrupoprodutoecommerce
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: imprimirpreco
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_marcafornecedor
+        description: Tabela do MEGA que traz informações sobre os os id's de marca e fornecedor. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idmarcafornecedor
+            description: ''
+            data_type: numeric
+          - name: idmarca
+            description: ''
+            data_type: numeric
+          - name: idfornecedor
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_metaprodutosportal
+        description: Tabela do MEGA que traz informações sobre dados como departamento do produto. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idmetaprodutosportal
+            description: ''
+            data_type: numeric
+          - name: iddepartamento
+            description: ''
+            data_type: numeric
+          - name: idgrupoproduto
+            description: ''
+            data_type: numeric
+          - name: idsecao
+            description: ''
+            data_type: numeric
+          - name: idfamilia
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone     
+      - name: mstore_t_material
+        description: Tabela do MEGA que traz informações sobre os materiais dos produtos. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idmaterial
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_produtodanota
+        description: Tabela do MEGA que traz informações a nivel de sku sobre os produtos existentes nas notas fiscais. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idprodutodanota
+            description: ''
+            data_type: numeric
+          - name: ipi
+            description: ''
+            data_type: numeric
+          - name: precodevenda
+            description: ''
+            data_type: numeric
+          - name: precodecusto
+            description: ''
+            data_type: numeric
+          - name: quantidade
+            description: ''
+            data_type: numeric
+          - name: idproduto
+            description: ''
+            data_type: numeric
+          - name: idnotafiscal
+            description: ''
+            data_type: numeric
+          - name: precocustopedido
+            description: ''
+            data_type: numeric
+          - name: quantidadeitensextra
+            description: ''
+            data_type: numeric
+          - name: quantidadeitensperdida
+            description: ''
+            data_type: numeric
+          - name: idpedido
+            description: ''
+            data_type: numeric
+          - name: acrescimo
+            description: ''
+            data_type: numeric
+          - name: desconto
+            description: ''
+            data_type: numeric
+          - name: codigobarra
+            description: ''
+            data_type: character varying
+          - name: notafiscalcancelada
+            description: ''
+            data_type: character varying
+          - name: foradelinha
+            description: ''
+            data_type: character varying
+          - name: precodecustoreal
+            description: ''
+            data_type: numeric
+          - name: closeout
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: cprod
+            description: ''
+            data_type: character varying
+          - name: ncm
+            description: ''
+            data_type: character varying
+          - name: origem
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone            
