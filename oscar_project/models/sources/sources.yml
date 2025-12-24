@@ -1113,3 +1113,1377 @@ sources:
           - name: _dms_loaded_at
             description: ''
             data_type: timestamp without time zone            
+      - name: mstore_t_funcionario
+        description: Tabela do MEGA que armazena informações sobre funcionários no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idfuncionario
+            description: ''
+            data_type: numeric
+          - name: comissaoacimameta
+            description: ''
+            data_type: numeric
+          - name: comissaoentremetas
+            description: ''
+            data_type: numeric
+          - name: comissaoabaixometa
+            description: ''
+            data_type: numeric
+          - name: limitecompras
+            description: ''
+            data_type: numeric
+          - name: comprasrealizadas
+            description: ''
+            data_type: numeric
+          - name: porcentagemmaximadesconto
+            description: ''
+            data_type: numeric
+          - name: idusuario
+            description: ''
+            data_type: numeric
+          - name: idestabelecimento
+            description: ''
+            data_type: numeric
+          - name: salario
+            description: ''
+            data_type: numeric
+          - name: datanascimento
+            description: ''
+            data_type: timestamp without time zone
+          - name: cpf
+            description: ''
+            data_type: character varying
+          - name: conjuge
+            description: ''
+            data_type: character varying
+          - name: mae
+            description: ''
+            data_type: character varying
+          - name: pai
+            description: ''
+            data_type: character varying
+          - name: sexo
+            description: ''
+            data_type: character varying
+          - name: rg
+            description: ''
+            data_type: character varying
+          - name: idatividade
+            description: ''
+            data_type: numeric
+          - name: nome
+            description: ''
+            data_type: character varying
+          - name: nomereduzido
+            description: ''
+            data_type: character varying
+          - name: observacao
+            description: ''
+            data_type: character varying
+          - name: idendereco
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: idfuncionarioold
+            description: ''
+            data_type: character varying
+          - name: idestadocivil
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: centrodecusto
+            description: ''
+            data_type: character varying
+          - name: cadastradocontadigital
+            description: ''
+            data_type: character varying
+          - name: atualizacadastrobeehome
+            description: ''
+            data_type: character varying
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: idcadastrobeehome
+            description: ''
+            data_type: numeric
+          - name: dataadmissao
+            description: ''
+            data_type: timestamp without time zone
+          - name: isbackoffice
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_atividade
+        description: Tabela do MEGA que armazena dados de atividade dos funcionários/vendedores. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idatividade
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: numeric
+          - name: codigoexternojo
+            description: ''
+            data_type: numeric
+          - name: idatividadef2
+            description: ''
+            data_type: numeric
+          - name: atualizacadastrobeehome
+            description: ''
+            data_type: character varying
+          - name: idcadastrobeehome
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_estadocivil
+        description: Tabela do MEGA que contém dados sobre o estado civil dos clientes no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idestadocivil
+            description: ''
+            data_type: numeric
+          - name: estadocivil
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_estoque
+        description: Tabela do MEGA que traz informações sobre o estoque. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idestoque
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: idestabelecimento
+            description: ''
+            data_type: numeric
+          - name: idproduto
+            description: ''
+            data_type: numeric
+          - name: quantidade
+            description: ''
+            data_type: numeric
+          - name: codigoantigo
+            description: ''
+            data_type: numeric
+          - name: precovenda
+            description: ''
+            data_type: numeric
+          - name: precopromocao
+            description: ''
+            data_type: numeric
+          - name: codigobarra
+            description: ''
+            data_type: character varying
+          - name: promocao
+            description: ''
+            data_type: character varying
+          - name: icms
+            description: ''
+            data_type: numeric
+          - name: primeiroprecovenda
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: migradoseek
+            description: ''
+            data_type: character varying
+          - name: valorcustomedio
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: valorultimocustomedio
+            description: ''
+            data_type: numeric
+          - name: valorcusto
+            description: ''
+            data_type: numeric
+          - name: codigoexternopaqueta
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_orcamento
+        description: Tabela do MEGA com informações sobre orçamentos no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idorcamento
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: data
+            description: ''
+            data_type: timestamp without time zone
+          - name: tempo
+            description: ''
+            data_type: numeric
+          - name: observacao
+            description: ''
+            data_type: character varying
+          - name: idvendedor
+            description: ''
+            data_type: numeric
+          - name: descontopercentual
+            description: ''
+            data_type: numeric
+          - name: descontovalor
+            description: ''
+            data_type: numeric
+          - name: totaldepecas
+            description: ''
+            data_type: numeric
+          - name: valorbruto
+            description: ''
+            data_type: numeric
+          - name: valor
+            description: ''
+            data_type: numeric
+          - name: idusuario
+            description: ''
+            data_type: numeric
+          - name: idusuarioautorizacao
+            description: ''
+            data_type: numeric
+          - name: idusuariocancelamento
+            description: ''
+            data_type: numeric
+          - name: datacancelamento
+            description: ''
+            data_type: timestamp without time zone
+          - name: idestabelecimento
+            description: ''
+            data_type: numeric
+          - name: idpontovenda
+            description: ''
+            data_type: numeric
+          - name: valefuncionario
+            description: ''
+            data_type: character varying
+          - name: nomecliente
+            description: ''
+            data_type: character varying
+          - name: idcondicaopagamento
+            description: ''
+            data_type: numeric
+          - name: perfilcliente
+            description: ''
+            data_type: numeric
+          - name: idtroca
+            description: ''
+            data_type: numeric
+          - name: observacaocancelamento
+            description: ''
+            data_type: character varying
+          - name: acrescimopercentual
+            description: ''
+            data_type: numeric
+          - name: codigocondicaopagamentocards
+            description: ''
+            data_type: numeric
+          - name: descricondicaopagamentocards
+            description: ''
+            data_type: character varying
+          - name: retiradodoestoque
+            description: ''
+            data_type: character varying
+          - name: idcaixa
+            description: ''
+            data_type: numeric
+          - name: idvenda
+            description: ''
+            data_type: character varying
+          - name: idcliente
+            description: ''
+            data_type: numeric
+          - name: idusuariocaixa
+            description: ''
+            data_type: numeric
+          - name: dataconfirmacao
+            description: ''
+            data_type: timestamp without time zone
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: cpfcnpj
+            description: ''
+            data_type: character varying
+          - name: idultimohistoricospcscore
+            description: ''
+            data_type: numeric
+          - name: idultimohistoricopesquisaspc
+            description: ''
+            data_type: numeric
+          - name: ticket
+            description: ''
+            data_type: character varying
+          - name: statusconferencia
+            description: ''
+            data_type: character varying
+          - name: idusuarioconferencia
+            description: ''
+            data_type: numeric
+          - name: valorcupomdesconto
+            description: ''
+            data_type: numeric
+          - name: valorfrete
+            description: ''
+            data_type: numeric
+          - name: chaveseguranca
+            description: ''
+            data_type: character varying
+          - name: codigovalefuncionario
+            description: ''
+            data_type: numeric
+          - name: cpfcnpjdependente
+            description: ''
+            data_type: character varying
+          - name: valorkitdesconto
+            description: ''
+            data_type: numeric
+          - name: idcupomdescontocliente
+            description: ''
+            data_type: numeric
+          - name: valorcashback
+            description: ''
+            data_type: numeric
+          - name: autoatendimento
+            description: ''
+            data_type: character varying
+          - name: tipocupomdesconto
+            description: ''
+            data_type: numeric
+          - name: idtransacaosolucx
+            description: ''
+            data_type: character varying
+          - name: orcamentoeditadoflag
+            description: ''
+            data_type: character varying
+          - name: orcamentowebstoreflag
+            description: ''
+            data_type: character varying
+          - name: integrador
+            description: ''
+            data_type: character varying
+          - name: orcamentobaixado
+            description: ''
+            data_type: character varying
+          - name: idlojavendedor
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: descontofidelidade
+            description: ''
+            data_type: numeric
+          - name: codigoresgatefidelidade
+            description: ''
+            data_type: character varying
+          - name: statusresgatefidelidade
+            description: ''
+            data_type: character varying
+          - name: pedidoecommerce
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_history_t_orcamento
+        description: Tabela de histórico da T_ORCAMENTO
+        columns:
+          - name: idorcamento
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: data
+            description: ''
+            data_type: timestamp without time zone
+          - name: tempo
+            description: ''
+            data_type: numeric
+          - name: observacao
+            description: ''
+            data_type: character varying
+          - name: idvendedor
+            description: ''
+            data_type: numeric
+          - name: descontopercentual
+            description: ''
+            data_type: numeric
+          - name: descontovalor
+            description: ''
+            data_type: numeric
+          - name: totaldepecas
+            description: ''
+            data_type: numeric
+          - name: valorbruto
+            description: ''
+            data_type: numeric
+          - name: valor
+            description: ''
+            data_type: numeric
+          - name: idusuario
+            description: ''
+            data_type: numeric
+          - name: idusuarioautorizacao
+            description: ''
+            data_type: numeric
+          - name: idusuariocancelamento
+            description: ''
+            data_type: numeric
+          - name: datacancelamento
+            description: ''
+            data_type: timestamp without time zone
+          - name: idestabelecimento
+            description: ''
+            data_type: numeric
+          - name: idpontovenda
+            description: ''
+            data_type: numeric
+          - name: valefuncionario
+            description: ''
+            data_type: character varying
+          - name: nomecliente
+            description: ''
+            data_type: character varying
+          - name: idcondicaopagamento
+            description: ''
+            data_type: numeric
+          - name: perfilcliente
+            description: ''
+            data_type: numeric
+          - name: idtroca
+            description: ''
+            data_type: numeric
+          - name: observacaocancelamento
+            description: ''
+            data_type: character varying
+          - name: acrescimopercentual
+            description: ''
+            data_type: numeric
+          - name: codigocondicaopagamentocards
+            description: ''
+            data_type: numeric
+          - name: descricondicaopagamentocards
+            description: ''
+            data_type: character varying
+          - name: retiradodoestoque
+            description: ''
+            data_type: character varying
+          - name: idcaixa
+            description: ''
+            data_type: numeric
+          - name: idvenda
+            description: ''
+            data_type: character varying
+          - name: idcliente
+            description: ''
+            data_type: numeric
+          - name: idusuariocaixa
+            description: ''
+            data_type: numeric
+          - name: dataconfirmacao
+            description: ''
+            data_type: timestamp without time zone
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: cpfcnpj
+            description: ''
+            data_type: character varying
+          - name: idultimohistoricospcscore
+            description: ''
+            data_type: numeric
+          - name: idultimohistoricopesquisaspc
+            description: ''
+            data_type: numeric
+          - name: ticket
+            description: ''
+            data_type: character varying
+          - name: statusconferencia
+            description: ''
+            data_type: character varying
+          - name: idusuarioconferencia
+            description: ''
+            data_type: numeric
+          - name: valorcupomdesconto
+            description: ''
+            data_type: numeric
+          - name: valorfrete
+            description: ''
+            data_type: numeric
+          - name: chaveseguranca
+            description: ''
+            data_type: character varying
+          - name: codigovalefuncionario
+            description: ''
+            data_type: numeric
+          - name: cpfcnpjdependente
+            description: ''
+            data_type: character varying
+          - name: valorkitdesconto
+            description: ''
+            data_type: numeric
+          - name: idcupomdescontocliente
+            description: ''
+            data_type: numeric
+          - name: valorcashback
+            description: ''
+            data_type: numeric
+          - name: autoatendimento
+            description: ''
+            data_type: character varying
+          - name: tipocupomdesconto
+            description: ''
+            data_type: numeric
+          - name: idtransacaosolucx
+            description: ''
+            data_type: character varying
+          - name: orcamentoeditadoflag
+            description: ''
+            data_type: character varying
+          - name: orcamentowebstoreflag
+            description: ''
+            data_type: character varying
+          - name: integrador
+            description: ''
+            data_type: character varying
+          - name: orcamentobaixado
+            description: ''
+            data_type: character varying
+          - name: idlojavendedor
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: descontofidelidade
+            description: ''
+            data_type: numeric
+          - name: codigoresgatefidelidade
+            description: ''
+            data_type: character varying
+          - name: statusresgatefidelidade
+            description: ''
+            data_type: character varying
+          - name: pedidoecommerce
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+          - name: op
+            description: ''
+            data_type: character varying
+      - name: mstore_t_orcamentoproduto
+        description: Tabela do MEGA com informações sobre orçamentos de produto no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idorcamentoproduto
+            description: ''
+            data_type: numeric
+          - name: valorvenda
+            description: ''
+            data_type: numeric
+          - name: idorcamento
+            description: ''
+            data_type: numeric
+          - name: quantidade
+            description: ''
+            data_type: numeric
+          - name: idproduto
+            description: ''
+            data_type: numeric
+          - name: valorcusto
+            description: ''
+            data_type: numeric
+          - name: descontovalor
+            description: ''
+            data_type: numeric
+          - name: foradelinha
+            description: ''
+            data_type: character varying
+          - name: premio
+            description: ''
+            data_type: numeric
+          - name: closeout
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: retiradodoestoquepelatroca
+            description: ''
+            data_type: character varying
+          - name: conferido
+            description: ''
+            data_type: character varying
+          - name: ehpresente
+            description: ''
+            data_type: character varying
+          - name: valorkitdesconto
+            description: ''
+            data_type: numeric
+          - name: ehkitproduto
+            description: ''
+            data_type: character varying
+          - name: tipokitprodutoaplicado
+            description: ''
+            data_type: numeric
+          - name: agrupamentopresente
+            description: ''
+            data_type: character varying
+          - name: ehbrinde
+            description: ''
+            data_type: character varying
+          - name: valorcashback
+            description: ''
+            data_type: numeric
+          - name: ehkitprodutobrinde
+            description: ''
+            data_type: character varying
+          - name: tipokitproduto
+            description: ''
+            data_type: numeric
+          - name: valorcupomdesconto
+            description: ''
+            data_type: numeric
+          - name: statusprodutonovo
+            description: ''
+            data_type: character varying
+          - name: valordescontofuncionario
+            description: ''
+            data_type: numeric
+          - name: freterateado
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: customedioproduto
+            description: ''
+            data_type: numeric
+          - name: customedioprodutoconsolidado
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_history_t_orcamentoproduto
+        description: Tabela de histórico da T_ORCAMENTOPRODUTO
+        columns:
+          - name: idorcamentoproduto
+            description: ''
+            data_type: numeric
+          - name: valorvenda
+            description: ''
+            data_type: numeric
+          - name: idorcamento
+            description: ''
+            data_type: numeric
+          - name: quantidade
+            description: ''
+            data_type: numeric
+          - name: idproduto
+            description: ''
+            data_type: numeric
+          - name: valorcusto
+            description: ''
+            data_type: numeric
+          - name: descontovalor
+            description: ''
+            data_type: numeric
+          - name: foradelinha
+            description: ''
+            data_type: character varying
+          - name: premio
+            description: ''
+            data_type: numeric
+          - name: closeout
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: retiradodoestoquepelatroca
+            description: ''
+            data_type: character varying
+          - name: conferido
+            description: ''
+            data_type: character varying
+          - name: ehpresente
+            description: ''
+            data_type: character varying
+          - name: valorkitdesconto
+            description: ''
+            data_type: numeric
+          - name: ehkitproduto
+            description: ''
+            data_type: character varying
+          - name: tipokitprodutoaplicado
+            description: ''
+            data_type: numeric
+          - name: agrupamentopresente
+            description: ''
+            data_type: character varying
+          - name: ehbrinde
+            description: ''
+            data_type: character varying
+          - name: valorcashback
+            description: ''
+            data_type: numeric
+          - name: ehkitprodutobrinde
+            description: ''
+            data_type: character varying
+          - name: tipokitproduto
+            description: ''
+            data_type: numeric
+          - name: valorcupomdesconto
+            description: ''
+            data_type: numeric
+          - name: statusprodutonovo
+            description: ''
+            data_type: character varying
+          - name: valordescontofuncionario
+            description: ''
+            data_type: numeric
+          - name: freterateado
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: customedioproduto
+            description: ''
+            data_type: numeric
+          - name: customedioprodutoconsolidado
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+          - name: op
+            description: ''
+            data_type: character varying
+      - name: mstore_t_cliente
+        description: Tabela do MEGA com informações sobre clientes no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idcliente
+            description: ''
+            data_type: numeric
+          - name: idtipopessoa
+            description: ''
+            data_type: numeric
+          - name: idconjuge
+            description: ''
+            data_type: numeric
+          - name: idempresaclientepf
+            description: ''
+            data_type: numeric
+          - name: idendereco
+            description: ''
+            data_type: numeric
+          - name: idestabelecimento
+            description: ''
+            data_type: numeric
+          - name: idlimitecredito
+            description: ''
+            data_type: numeric
+          - name: idtamanhocalcado
+            description: ''
+            data_type: numeric
+          - name: idtimedefutebol
+            description: ''
+            data_type: numeric
+          - name: idultimohistoricopesquisaspc
+            description: ''
+            data_type: numeric
+          - name: idtipocadastro
+            description: ''
+            data_type: numeric
+          - name: idatividade
+            description: ''
+            data_type: numeric
+          - name: idanalisecredito
+            description: ''
+            data_type: numeric
+          - name: idestadocivil
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: cpfcnpj
+            description: ''
+            data_type: character varying
+          - name: rg
+            description: ''
+            data_type: character varying
+          - name: rgestado
+            description: ''
+            data_type: character varying
+          - name: nome
+            description: ''
+            data_type: character varying
+          - name: nomereduzido
+            description: ''
+            data_type: character varying
+          - name: sexo
+            description: ''
+            data_type: character varying
+          - name: mae
+            description: ''
+            data_type: character varying
+          - name: pai
+            description: ''
+            data_type: character varying
+          - name: etnia
+            description: ''
+            data_type: character varying
+          - name: inscricaoestadual
+            description: ''
+            data_type: character varying
+          - name: datacadastro
+            description: ''
+            data_type: timestamp without time zone
+          - name: datanascimento
+            description: ''
+            data_type: timestamp without time zone
+          - name: dataprimeiracompranolimite
+            description: ''
+            data_type: timestamp without time zone
+          - name: dataultimaatualizacao
+            description: ''
+            data_type: timestamp without time zone
+          - name: dataultimacompra
+            description: ''
+            data_type: timestamp without time zone
+          - name: divulgaremail
+            description: ''
+            data_type: character varying
+          - name: isrendacomprovada
+            description: ''
+            data_type: character varying
+          - name: pontuacaoantiga
+            description: ''
+            data_type: numeric
+          - name: possuiemail
+            description: ''
+            data_type: character varying
+          - name: valorrenda
+            description: ''
+            data_type: numeric
+          - name: qtdcarnespagoematraso
+            description: ''
+            data_type: numeric
+          - name: qtdchequesdevolvidos
+            description: ''
+            data_type: numeric
+          - name: qtdchequespagoematraso
+            description: ''
+            data_type: numeric
+          - name: qtdcomprasrealizadas
+            description: ''
+            data_type: numeric
+          - name: valorcarnespagoematraso
+            description: ''
+            data_type: numeric
+          - name: valorchequesdevolvidos
+            description: ''
+            data_type: numeric
+          - name: valorchequespagoematraso
+            description: ''
+            data_type: numeric
+          - name: valormaximocomprado
+            description: ''
+            data_type: numeric
+          - name: valortotalcomprado
+            description: ''
+            data_type: numeric
+          - name: valorultimacompra
+            description: ''
+            data_type: numeric
+          - name: observacao
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: desabilitarabandonar
+            description: ''
+            data_type: character varying
+          - name: idultimohistoricospcscore
+            description: ''
+            data_type: numeric
+          - name: idciclo
+            description: ''
+            data_type: numeric
+          - name: cadastradocards
+            description: ''
+            data_type: character varying
+          - name: contribuinteicms
+            description: ''
+            data_type: character varying
+          - name: rendacomprovada
+            description: ''
+            data_type: character varying
+          - name: grupoorigem
+            description: ''
+            data_type: character varying
+          - name: migradofoto
+            description: ''
+            data_type: character varying
+          - name: migradoizio
+            description: ''
+            data_type: numeric
+          - name: idocupacao
+            description: ''
+            data_type: numeric
+          - name: situacaoempregaticia
+            description: ''
+            data_type: numeric
+          - name: utilizaoverlimitfestclub
+            description: ''
+            data_type: character varying
+          - name: codigoprodutooscar
+            description: ''
+            data_type: numeric
+          - name: codigoprodutojo
+            description: ''
+            data_type: numeric
+          - name: faturadigitaltipo
+            description: ''
+            data_type: character varying
+          - name: orgaoemissor
+            description: ''
+            data_type: character varying
+          - name: cidadenatal
+            description: ''
+            data_type: character varying
+          - name: ufnatal
+            description: ''
+            data_type: character varying
+          - name: dataemissaodocumento
+            description: ''
+            data_type: timestamp without time zone
+          - name: integrador
+            description: ''
+            data_type: character varying
+          - name: receberwhatsapp
+            description: ''
+            data_type: character varying
+          - name: codigoprodutoabys
+            description: ''
+            data_type: numeric
+          - name: possuisenhapadrao
+            description: ''
+            data_type: character varying
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: cadastradopointus
+            description: ''
+            data_type: character varying
+          - name: codigoprodutocarioca
+            description: ''
+            data_type: numeric
+          - name: codigoproduto
+            description: ''
+            data_type: numeric
+          - name: isfidelidadepointus
+            description: ''
+            data_type: character varying
+          - name: pinsuframa
+            description: ''
+            data_type: numeric
+          - name: fidelidadepointus
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_contatocliente
+        description: Tabela do MEGA que contém informações de contato dos clientes no Mega. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idcontatocliente
+            description: ''
+            data_type: numeric
+          - name: idcliente
+            description: ''
+            data_type: numeric
+          - name: idtipocontato
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: descricao
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: observacao
+            description: ''
+            data_type: character varying
+          - name: ddd
+            description: ''
+            data_type: character varying
+          - name: enviasms
+            description: ''
+            data_type: character varying
+          - name: enviaemail
+            description: ''
+            data_type: character varying
+          - name: validoemail
+            description: ''
+            data_type: character varying
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_orcamentotroca
+        description: Tabela do MEGA que traz informações sobre os orcamentos relativos a trocas. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idorcamentotroca
+            description: ''
+            data_type: numeric
+          - name: idorcamento
+            description: ''
+            data_type: numeric
+          - name: idtroca
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_history_t_orcamentotroca
+        description: Tabela de histórico da T_ORCAMENTOTROCA
+
+        columns:
+          - name: idorcamentotroca
+            description: ''
+            data_type: numeric
+          - name: idorcamento
+            description: ''
+            data_type: numeric
+          - name: idtroca
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+          - name: op
+            description: ''
+            data_type: character varying
+      - name: mstore_t_produtotroca
+        description: Tabela do MEGA que traz informações sobre os orcamentos relativos a trocas em nivel de sku. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idprodutotroca
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: idproduto
+            description: ''
+            data_type: numeric
+          - name: quantidade
+            description: ''
+            data_type: numeric
+          - name: idtroca
+            description: ''
+            data_type: numeric
+          - name: valor
+            description: ''
+            data_type: numeric
+          - name: idmotivotroca
+            description: ''
+            data_type: numeric
+          - name: idusuariodevolucao
+            description: ''
+            data_type: numeric
+          - name: datadevolucao
+            description: ''
+            data_type: timestamp without time zone
+          - name: observacao
+            description: ''
+            data_type: character varying
+          - name: foradelinha
+            description: ''
+            data_type: character varying
+          - name: closeout
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: customedioproduto
+            description: ''
+            data_type: numeric
+          - name: customedioprodutoconsolidado
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_history_t_produtotroca
+        description: Tabela de histórico da T_PRODUTOTROCA
+        columns:
+          - name: op
+            description: ''
+            data_type: character varying
+          - name: timestamp
+            description: ''
+            data_type: character varying
+          - name: idprodutotroca
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: idproduto
+            description: ''
+            data_type: numeric
+          - name: quantidade
+            description: ''
+            data_type: numeric
+          - name: idtroca
+            description: ''
+            data_type: numeric
+          - name: valor
+            description: ''
+            data_type: numeric
+          - name: idmotivotroca
+            description: ''
+            data_type: numeric
+          - name: idusuariodevolucao
+            description: ''
+            data_type: numeric
+          - name: datadevolucao
+            description: ''
+            data_type: timestamp without time zone
+          - name: observacao
+            description: ''
+            data_type: character varying
+          - name: foradelinha
+            description: ''
+            data_type: character varying
+          - name: closeout
+            description: ''
+            data_type: character varying
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: customedioproduto
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_t_troca
+        description: Tabela do MEGA que traz informações sobre os orcamentos relativos a trocas em nivel de cliente e estabelecimento. (AWS DMS - Atualizado em tempo real)
+        columns:
+          - name: idtroca
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: data
+            description: ''
+            data_type: timestamp without time zone
+          - name: idorcamento
+            description: ''
+            data_type: numeric
+          - name: nomecliente
+            description: ''
+            data_type: character varying
+          - name: idestabelecimento
+            description: ''
+            data_type: numeric
+          - name: idpontovenda
+            description: ''
+            data_type: numeric
+          - name: idusuario
+            description: ''
+            data_type: numeric
+          - name: quantidadeprodutos
+            description: ''
+            data_type: numeric
+          - name: valortotalprodutos
+            description: ''
+            data_type: numeric
+          - name: istrocado
+            description: ''
+            data_type: character varying
+          - name: idusuariocancelamento
+            description: ''
+            data_type: numeric
+          - name: datacancelamento
+            description: ''
+            data_type: timestamp without time zone
+          - name: idcaixa
+            description: ''
+            data_type: numeric
+          - name: codigocliente
+            description: ''
+            data_type: numeric
+          - name: idcliente
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: motivocancelamento
+            description: ''
+            data_type: character varying
+          - name: idnfe
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: idnfedevolucao
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+      - name: mstore_history_t_troca
+        description: Tabela de histórico da T_TROCA
+        columns:
+          - name: op
+            description: ''
+            data_type: character varying
+          - name: timestamp
+            description: ''
+            data_type: character varying
+          - name: idtroca
+            description: ''
+            data_type: numeric
+          - name: status
+            description: ''
+            data_type: character varying
+          - name: data
+            description: ''
+            data_type: timestamp without time zone
+          - name: idorcamento
+            description: ''
+            data_type: numeric
+          - name: nomecliente
+            description: ''
+            data_type: character varying
+          - name: idestabelecimento
+            description: ''
+            data_type: numeric
+          - name: idpontovenda
+            description: ''
+            data_type: numeric
+          - name: idusuario
+            description: ''
+            data_type: numeric
+          - name: quantidadeprodutos
+            description: ''
+            data_type: numeric
+          - name: valortotalprodutos
+            description: ''
+            data_type: numeric
+          - name: istrocado
+            description: ''
+            data_type: character varying
+          - name: idusuariocancelamento
+            description: ''
+            data_type: numeric
+          - name: datacancelamento
+            description: ''
+            data_type: timestamp without time zone
+          - name: idcaixa
+            description: ''
+            data_type: numeric
+          - name: codigocliente
+            description: ''
+            data_type: numeric
+          - name: idcliente
+            description: ''
+            data_type: numeric
+          - name: codigoab
+            description: ''
+            data_type: numeric
+          - name: motivocancelamento
+            description: ''
+            data_type: character varying
+          - name: idnfe
+            description: ''
+            data_type: numeric
+          - name: codigoexterno
+            description: ''
+            data_type: character varying
+          - name: idnfedevolucao
+            description: ''
+            data_type: numeric
+          - name: _dms_loaded_at
+            description: ''
+            data_type: timestamp without time zone
+
+  - name: raw_data
+    description: Tabelas raw carregadas através de cargas batch (Agendadas).
+    tables:
+      - name: mstore_history_estoque
+        description: Tabela do MEGA que contém a posição de estoque no final de cada mês. (Tabela histórica)
+      - name: mstore_enriched_gender_classifier
+        description: Tabela do MEGA enriquecida via script python para classificar o gênero do cliente baseado no nome (AWS Glue - Domingo)
