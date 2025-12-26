@@ -9,7 +9,7 @@ def find_sources_without_columns():
     """Encontra todas as tabelas no sources.yml que não têm colunas definidas"""
     
     # Carrega o arquivo sources.yml
-    with open('sources.yml', 'r') as f:
+    with open('../models/sources/sources.yml', 'r') as f:
         sources_data = yaml.safe_load(f)
     
     # Encontra a seção raw_input
