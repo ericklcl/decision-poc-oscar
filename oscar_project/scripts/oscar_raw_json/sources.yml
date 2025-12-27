@@ -1,0 +1,698 @@
+# ============================================================================
+# Sources para Tabelas JSON - OSCAR RAW JSON
+# Schema: OSCAR_RAW_JSON
+# Padrão: JSN_<NOME_DA_TABELA>
+# Baseado no arquivo oscar_json_tables.sql
+# Gerado automaticamente em 27/12/2025
+# Total: 42 tabelas JSON
+# ============================================================================
+
+version: 2
+
+sources:
+  - name: raw_json
+    description: "Dados brutos em formato JSON carregados no Snowflake"
+    database: oscar  # Ajuste conforme necessário
+    schema: raw_json
+    tables:
+      # Enriched Gender Classifier
+      - name: jsn_mstore_enriched_gender_classifier
+        description: "Dados enriquecidos com classificação de gênero"
+        columns:
+          - name: json_data
+            description: "Dados brutos em formato JSON/VARIANT"
+            data_type: variant
+          - name: s3_file_name
+            description: "Nome do arquivo S3"
+            data_type: varchar
+          - name: s3_file_row_number
+            description: "Número da linha no arquivo S3"
+            data_type: number
+          - name: s3_file_last_modified
+            description: "Data de última modificação do arquivo S3"
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            description: "Timestamp de carga em UTC"
+            data_type: timestamp_ntz
+          - name: record_source
+            description: "Origem do registro"
+            data_type: varchar
+
+      # MStore History Tables
+      - name: jsn_mstore_history_estoque
+        description: "Histórico de estoque MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_history_t_notafiscal
+        description: "Histórico de notas fiscais MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_history_t_orcamento
+        description: "Histórico de orçamentos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_history_t_orcamentoproduto
+        description: "Histórico de produtos em orçamentos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_history_t_orcamentotroca
+        description: "Histórico de trocas em orçamentos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_history_t_produtodanota
+        description: "Histórico de produtos das notas MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_history_t_produtotroca
+        description: "Histórico de produtos em trocas MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_history_t_troca
+        description: "Histórico de trocas MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      # MStore Current Tables
+      - name: jsn_mstore_t_atividade
+        description: "Atividades MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_cliente
+        description: "Clientes MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_contatocliente
+        description: "Contatos dos clientes MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_cor
+        description: "Cores MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_departamento
+        description: "Departamentos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_endereco
+        description: "Endereços MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_estabelecimento
+        description: "Estabelecimentos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_estadocivil
+        description: "Estados civis MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_estoque
+        description: "Estoque MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_fornecedor
+        description: "Fornecedores MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_funcionario
+        description: "Funcionários MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_grupof
+        description: "Grupos F MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_grupoproduto
+        description: "Grupos de produtos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_marca
+        description: "Marcas MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_marcafornecedor
+        description: "Marcas dos fornecedores MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_material
+        description: "Materiais MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_metaprodutosportal
+        description: "Meta produtos portal MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_notafiscal
+        description: "Notas fiscais MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_orcamento
+        description: "Orçamentos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_orcamentoproduto
+        description: "Produtos em orçamentos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_orcamentotroca
+        description: "Trocas em orçamentos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_produto
+        description: "Produtos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_produtodanota
+        description: "Produtos das notas MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_produtoespecifico
+        description: "Produtos específicos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_produtogenerico
+        description: "Produtos genéricos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_produtotroca
+        description: "Produtos em trocas MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_referenciaproduto
+        description: "Referências de produtos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_secao
+        description: "Seções MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_situacaoproduto
+        description: "Situações de produtos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_tamanho
+        description: "Tamanhos MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_troca
+        description: "Trocas MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      - name: jsn_mstore_t_unidadenegocio
+        description: "Unidades de negócio MStore"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar
+
+      # Sheets Tables
+      - name: jsn_sheets_metragem_lojas
+        description: "Metragem das lojas de planilhas"
+        columns:
+          - name: json_data
+            data_type: variant
+          - name: s3_file_name
+            data_type: varchar
+          - name: s3_file_row_number
+            data_type: number
+          - name: s3_file_last_modified
+            data_type: timestamp_ntz
+          - name: load_timestamp_utc
+            data_type: timestamp_ntz
+          - name: record_source
+            data_type: varchar

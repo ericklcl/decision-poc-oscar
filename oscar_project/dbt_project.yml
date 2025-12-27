@@ -18,33 +18,51 @@ clean-targets:
 models:
   oscar_project:
     +tags: ['poc']
-        
+   
     raw:
       +materialized: table
       +schema: raw
       +tags: ["raw"]
       
     stage:
-      +materialized: view      
+      +materialized: table      
       +schema: stage
       +tags: ["stage"]
       
-    mart:
+    marts:
       +materialized: table
       +transient: false
       +schema: mart
       +tags: ["mart"]
 
-# CONFIGURAÇÃO DO SEED (aux_nomes.csv)
 seeds:
   oscar_project:
-    # O seed será criado no schema de RAW do seu Snowflake
-    +schema: raw
+    # Configurações globais (aplicam-se a todos os seeds)
+    +schema: raw_seed
     +quote_columns: false
-    config:
-      # Definimos varchar sem limite (ou alto) para evitar erro no campo alternative_names
-      column_types:
+
+    # 1. Configuração para aux_nomes
+    aux_nomes:
+      +column_types:
         alternative_names: varchar
         first_name: varchar
         group_name: varchar
         classification: varchar(10)
+
+    # 2. Configuração para aux_feriados
+    aux_feriados:
+      +column_types:
+        data: varchar 
+
+    # 3. Demais arquivos (configurações diretas)
+    aux_emails_lojas:
+      +enabled: true
+
+    aux_gestores:
+      +enabled: true
+
+    aux_shop_rua_lojas:
+      +enabled: true
+
+    aux_status_funcionamento_lojas:
+      +enabled: true

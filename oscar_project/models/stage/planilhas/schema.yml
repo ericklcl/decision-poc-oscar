@@ -1,0 +1,19 @@
+version: 2
+models:
+  - name: stg_seed_feriados
+    columns:
+      - name: data
+        description: ""
+      - name: dia_semana
+        description: "Dia da semana do feriado"
+      - name: ds_feriado
+        description: "Descrição do feriado"
+  - name: stg_seed_gestores
+    columns: []
+  - name: stg_status_funcionamento_lojas
+    columns:
+      - name: idestabelecimento
+      - name: ds_sigla
+      - name: ds_unidadenegocio
+      - name: loja_ativa
+  

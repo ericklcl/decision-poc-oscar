@@ -1,3 +1,6 @@
 .venv/
 logs/
 gender_classifier.py
+profiles.yml
+keys
+.user.yml
