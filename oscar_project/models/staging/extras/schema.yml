@@ -1,0 +1,49 @@
+version: 2
+models:
+  - name: stg_dates
+    description: Tabela de dados relacionados a datas.
+    columns:
+      - name: ano
+        description: Ano da data.
+      - name: bimestre
+        description: Bimestre da data.
+      - name: data
+        description: Data.
+      - name: data_comeco_semana
+        description: Data de início da semana.
+      - name: data_final_semana
+        description: Data final da semana.
+      - name: dia_do_ano
+        description: Dia do ano.
+      - name: dia_mes
+        description: Dia do mês.
+      - name: id_data
+        description: Identificador da data.
+      - name: n_dia_semana
+        description: Número do dia da semana.
+      - name: nome_dia_semana
+        description: Nome do dia da semana.
+      - name: nome_dia_semana_curto
+        description: Nome curto do dia da semana.
+      - name: nome_mes_curto
+        description: Nome curto do mês.
+      - name: nomes_mes
+        description: Nome do mês.
+      - name: numero_mes
+        description: Número do mês.
+      - name: primeiro_dia_ano
+        description: Primeiro dia do ano.
+      - name: primeiro_dia_mes
+        description: Primeiro dia do mês.
+      - name: quadrimestre
+        description: Quadrimestre.
+      - name: semana_ano
+        description: Semana do ano.
+      - name: semestre
+        description: Semestre.
+      - name: trimestre
+        description: Trimestre.
+      - name: ultimo_dia_ano
+        description: Último dia do ano.
+      - name: ultimo_dia_mes
+        description: Último dia do mês.

@@ -1,0 +1,4 @@
+version: 2
+models:
+  - name: stg_t_history_estoque
+    columns: []

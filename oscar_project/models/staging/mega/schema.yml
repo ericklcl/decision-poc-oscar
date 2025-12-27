@@ -1,0 +1,316 @@
+version: 2
+
+models:
+  - name: stg_history_estoque
+    columns: []
+
+  - name: stg_t_atividade
+    description: Tabela que registra informações de atividades no MEGA.
+    columns:
+      - name: descricao
+        description: Descrição da atividade no MEGA.
+      - name: idatividade
+        description: Identificador único da atividade no MEGA.
+
+  - name: stg_t_canal_venda
+    description: Tabela que registra o canal de venda para cada cliente no MEGA.
+    columns:
+      - name: idcliente
+        description: Identificador único do cliente no MEGA.
+      - name: ds_canal_venda
+        description: Classifica o cliente de acordo com os canais onde ele fez uma compra (Online, Offline ou Ambos).
+
+  - name: stg_t_cliente_classificador_enriched
+    columns: []
+
+  - name: stg_t_cliente_classificador
+    columns: []
+
+  - name: stg_t_cliente
+    description: Tabela que armazena informações dos clientes no MEGA.
+    columns:
+      - name: cpfcnpj
+        description: CPF ou CNPJ do cliente no MEGA.
+      - name: datanascimento
+        description: Data de nascimento do cliente no MEGA.
+      - name: genero
+        description: Genero do cliente no MEGA.
+      - name: idcliente
+        description: Identificador único do cliente no MEGA.
+      - name: idendereco
+        description: Identificador único do endereço associado ao cliente no MEGA.
+      - name: nomereduzido
+        description: Nome reduzido do cliente no MEGA.
+
+  - name: stg_t_contatocliente
+    description: Tabela da API do MEGA que contém informações de contato dos clientes no Mega.
+    columns:
+      - name: ddd
+        description: Número do DD do cliente.
+      - name: descricao
+        description: Descrição do contato.
+      - name: idcliente
+        description: Código de identificação do cliente.
+      - name: idtipocontato
+        description: Código de identificação do tipo de contato do cliente.
+
+  - name: stg_t_cor
+    description: Tabela da API do MEGA com dados sobre cores de produtos no Mega.
+    columns:
+      - name: descricao
+        description: Descrição da cor.
+      - name: idcor
+        description: Código de identificação da cor.
+
+  - name: stg_t_departamento
+    description: Tabela da API do MEGA com informações sobre departamentos no Mega.
+    columns:
+      - name: descricao
+        description: Descrição do departamento.
+      - name: iddepartamento
+        description: Código de identificação do departamento.
+
+  - name: stg_t_endereco
+    description: Tabela que armazena informações de endereços no MEGA.
+    columns:
+      - name: bairro
+        description: Bairro associlogradouroado ao endereço no MEGA.
+      - name: cep
+        description: CEP associado ao endereço no MEGA.
+      - name: idendereco
+        description: Identificador único do endereço no MEGA.
+      - name: localidade
+        description: Localidade associada ao endereço no MEGA.
+      - name: logradouro
+        description: Logradouro associado ao endereço no MEGA.
+      - name: numero
+        description: Número associado ao endereço no MEGA.
+      - name: uf
+        description: Unidade federativa associada ao endereço no MEGA.
+
+  - name: stg_t_estabelecimento
+    description: Tabela que armazena informações de estabelecimentos no MEGA.
+    columns:
+      - name: cnpj
+        description: CNPJ associado ao estabelecimento no MEGA.
+      - name: idendereco
+        description: Identificador único do endereço associado ao estabelecimento no MEGA.
+      - name: idestabelecimento
+        description: Identificador único do estabelecimento no MEGA.
+      - name: idunidadenegocio
+        description: Identificador único da unidade de negócio associada ao estabelecimento no MEGA.
+      - name: inscricaoestadual
+        description: Inscrição estadual associada ao estabelecimento no MEGA.
+      - name: nomefantasia
+        description: Nome fantasia associado ao estabelecimento no MEGA.
+      - name: razaosocial
+        description: Razão social associada ao estabelecimento no MEGA.
+      - name: sigla
+        description: Sigla associada ao estabelecimento no MEGA.
+      - name: status
+        description: Status associado ao estabelecimento no MEGA.
+
+  - name: stg_t_estadocivil
+    description: Tabela da API do MEGA que contém dados sobre o estado civil dos clientes no Mega.
+    columns:
+      - name: descricao
+        description: Descrição do estado civil.
+      - name: idestadocivil
+        description: Código de identificação do estado civil.
+
+  - name: stg_t_estoque
+    description: Tabela que armazena informações de estoque no MEGA.
+    columns:
+      - name: idestoque
+        description: Identificador único do estoque no MEGA.
+      - name: idestabelecimento
+        description: Identificador único do estabelecimento associado ao estoque no MEGA.
+      - name: idproduto
+        description: Identificador único do produto associado ao estoque no MEGA.
+      - name: quantidade
+        description: Quantidade associada ao estoque no MEGA.
+      - name: precovenda
+        description: Preço de venda associado ao estoque no MEGA.
+
+  - name: stg_t_fornecedor
+    description: Tabela que armazena informações de fornecedores no MEGA.
+    columns:
+      - name: idfornecedor
+        description: Identificador único do fornecedor no MEGA.
+      - name: nome
+        description: Nome do fornecedor no MEGA.
+      - name: cpfcnpj
+        description: CPF ou CNPJ associado ao fornecedor no MEGA.
+      - name: status
+        description: Status associado ao fornecedor no MEGA.
+
+  - name: stg_t_funcionario
+    description: Tabela que armazena informações de funcionários no MEGA.
+    columns:
+      - name: idfuncionario
+        description: Identificador único do funcionario no MEGA.
+      - name: nome
+        description: Nome do funcionário no MEGA.
+      - name: cpf
+        description: CPF associado ao funcionário no MEGA.
+      - name: status
+        description: Status associado ao funcionário no MEGA.
+
+  - name: stg_t_grupof
+    columns: []
+
+  - name: stg_t_grupoproduto
+    description: Tabela que armazena informações sobre os grupos de produtos no MEGA.
+    columns:
+      - name: idgrupoproduto
+        description: Identificador único do grupo de produtos no MEGA.
+      - name: descricao
+        description: Descrição do grupo de produtos no MEGA.
+
+  - name: stg_t_marca
+    description: Tabela que armazena informações sobre as marcas de produtos no MEGA.
+    columns:
+      - name: idmarca
+        description: Identificador único da marca de produtos no MEGA.
+      - name: descricao
+        description: Descrição da marca de produtos no MEGA.
+
+  - name: stg_t_marcafornecedor
+    description: Tabela que armazena informações sobre a relação entre fornecedores e marcas no MEGA.
+    columns:
+      - name: idmarcafornecedor
+        description: Identificador único da relação entre fornecedor e marca no MEGA.
+      - name: idfornecedor
+        description: Identificador único do fornecedor no MEGA.
+      - name: idmarca
+        description: Identificador único da marca no MEGA.
+
+  - name: stg_t_material
+    description: Tabela que armazena informações sobre materiais no MEGA.
+    columns:
+      - name: idmaterial
+        description: Identificador único do material no MEGA.
+      - name: descricao
+        description: Descrição do material no MEGA.
+
+  - name: stg_t_metaprodutosportal
+    columns: []
+
+  - name: stg_t_notafiscal
+    description: Tabela que armazena informações sobre notas fiscais no MEGA.
+    columns:
+      - name: idnotafiscal
+        description: Identificador único da nota fiscal no MEGA.
+      - name: numeronota
+        description: Numero da nota fiscal no MEGA.
+      - name: data
+        description: Data da nota fiscal no MEGA.
+
+  - name: stg_t_orcamento
+    description: Tabela da API do MEGA com informações sobre orçamentos no Mega.
+    columns:
+      - name: idorcamento
+        description: Código de identificação do orçamento no MEGA.
+      - name: idcliente
+        description: Código de identificação do cliente associado ao orçamento no MEGA.
+      - name: data
+        description: Data associada ao orçamento no MEGA.
+
+  - name: stg_t_orcamentoproduto
+    description: Tabela da API do MEGA com informações sobre produtos associados a orçamentos no Mega.
+    columns:
+      - name: idorcamento
+        description: Código de identificação do orçamento no MEGA.
+      - name: idproduto
+        description: Código de identificação do produto associado ao produto no orçamento no MEGA.
+
+  - name: stg_t_orcamentotroca
+    description: Tabela da API do MEGA com informações sobre trocas associadas a orçamentos no Mega.
+    columns:
+      - name: idorcamentotroca
+        description: Código de identificação do orçamento de troca no MEGA.
+      - name: idorcamento
+        description: Código de identificação do orçamento no MEGA.
+      - name: idtroca
+        description: Código de identificação da troca no MEGA.
+
+  - name: stg_t_produto
+    description: Tabela da API do MEGA com informações sobre produtos no MEGA.
+    columns:
+      - name: idproduto
+        description: Código de identificação do produto no MEGA.
+      - name: nome
+        description: Nome do produto no MEGA.
+
+  - name: stg_t_produtodanota
+    description: Tabela da API do MEGA com informações sobre produtos associados a notas fiscais no MEGA.
+    columns:
+      - name: idprodutodanota
+        description: Código de identificação do produto na nota fiscal no MEGA.
+      - name: idnotafiscal
+        description: Código de identificação da nota fiscal associada ao produto no MEGA.
+
+  - name: stg_t_produtoespecifico
+    description: Tabela da API do MEGA que contém dados específicos de produtos no Mega.
+    columns:
+      - name: idprodutoespecifico
+        description: Código de identificação do produto específico.
+      - name: descricao
+        description: Descrição do produto específico.
+
+  - name: stg_t_produtogenerico
+    description: Tabela da API do MEGA com dados genéricos de produtos no Mega.
+    columns:
+      - name: idprodutogenerico
+        description: Código de identificação do produto genérico.
+      - name: descricao
+        description: Descrição do produto.
+
+  - name: stg_t_produtotroca
+    description: Tabela da API do MEGA com informações sobre produtos associados a trocas no MEGA.
+    columns:
+      - name: idprodutotroca
+        description: Código de identificação do produto associado à troca no MEGA.
+      - name: idtroca
+        description: Código de identificação da troca associada ao produto no MEGA.
+
+  - name: stg_t_referenciaproduto
+    description: Tabela da API do MEGA com informações sobre referências de produtos no MEGA.
+    columns:
+      - name: idreferenciaproduto
+        description: Código de identificação da referência do produto no MEGA.
+
+  - name: stg_t_secao
+    description: Tabela da API do MEGA com informações sobre seções no MEGA.
+    columns:
+      - name: idsecao
+        description: Código de identificação da seção no MEGA.
+      - name: descricao
+        description: Descrição da seção no MEGA.
+
+  - name: stg_t_situacaoproduto
+    columns: []
+
+  - name: stg_t_tamanho
+    description: Tabela da API do MEGA com informações sobre tamanhos de produtos no Mega.
+    columns:
+      - name: idtamanho
+        description: Código de identificação do tamanho.
+      - name: descricao
+        description: Descrição do tamanho.
+
+  - name: stg_t_troca
+    description: Tabela da API do MEGA com informações sobre trocas no MEGA.
+    columns:
+      - name: idtroca
+        description: Código de identificação da troca no MEGA.
+      - name: data
+        description: Data da troca no MEGA.
+
+  - name: stg_t_unidadenegocio
+    description: Tabela da API do MEGA com dados sobre unidades de negócio no Mega.
+    columns:
+      - name: idunidadenegocio
+        description: Código de identificação da unidade de negócio.
+      - name: descricao
+        description: Descrição da unidade de negócio.

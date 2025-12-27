@@ -1,0 +1,9 @@
+version: 2
+models:
+  - name: stg_seed_feriados
+    columns: []
+  - name: stg_seed_gestores
+    columns: []
+  - name: stg_status_funcionamento_lojas
+    columns: []
+  
