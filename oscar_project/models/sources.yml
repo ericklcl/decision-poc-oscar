@@ -704,3 +704,28 @@ sources:
         description: Tabela do MEGA que contém a posição de estoque no final de cada mês. (Tabela histórica)
       - name: mstore_enriched_gender_classifier
         description: Tabela do MEGA enriquecida via script python para classificar o gênero do cliente baseado no nome (AWS Glue - Domingo)
+
+  - name: raw_input
+    description: Tabelas de entrada brutas carregadas via planilhas.
+    tables:
+      - name: sheets_metragem_lojas
+        description: Planilha contendo a metragem das lojas.
+        columns:
+          - name: diretor
+            description: Diretor da loja
+            data_type: varchar
+          - name: regional
+            description: Regional da loja
+            data_type: varchar
+          - name: sigla
+            description: Sigla da loja
+            data_type: varchar
+          - name: nome_fantasia
+            description: Nome fantasia da loja
+            data_type: varchar
+          - name: bandeira
+            description: Bandeira da loja
+            data_type: varchar
+          - name: metragem
+            description: Metragem da loja
+            data_type: varchar

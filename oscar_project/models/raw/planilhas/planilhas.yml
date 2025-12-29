@@ -1,0 +1,116 @@
+version: 2
+
+models:
+  - name: seed_emails_lojas
+    description: "Tabela com informações de e-mails das lojas e gerentes, baseada no seed aux_emails_lojas"
+    columns:
+      - name: filial
+        description: "Código identificador da filial"
+        tests:
+          - not_null
+
+      - name: sigla
+        description: "Sigla da loja"
+
+      - name: email_loja
+        description: "Endereço de e-mail da loja"
+
+      - name: email_gerente
+        description: "Endereço de e-mail do gerente da loja"
+
+  - name: seed_feriados
+    description: "Tabela de feriados com datas e descrições, baseada no seed aux_feriados"
+    columns:
+      - name: data
+        description: "Data do feriado no formato DATE"
+        tests:
+          - not_null
+          - unique
+
+      - name: dia_semana
+        description: "Dia da semana do feriado"
+
+      - name: ds_feriado
+        description: "Descrição/nome do feriado"
+
+  - name: seed_gestores
+    description: "Tabela com informações da estrutura de gestão das lojas (diretores, regionais), baseada no seed aux_gestores"
+    tags: ["daily"]
+    columns:
+      - name: grupo
+        description: "Nome do grupo empresarial"
+
+      - name: bandeira
+        description: "Bandeira/marca da loja"
+
+      - name: diretor
+        description: "Nome do diretor responsável"
+
+      - name: regional
+        description: "Nome do regional responsável"
+
+      - name: codigo_loja
+        description: "Código identificador da loja"
+
+      - name: descricao
+        description: "Descrição da loja"
+
+      - name: loja
+        description: "Nome da loja"
+
+      - name: idestabelecimento
+        description: "ID único do estabelecimento"
+        tests:
+          - not_null
+
+  - name: seed_lojas_rua_shop
+    description: "Tabela com informações sobre lojas de rua vs shopping, baseada no seed aux_shop_rua_lojas"
+    columns:
+      - name: ds_sigla
+        description: "Descrição/sigla da loja"
+
+      - name: loja
+        description: "Nome da loja"
+
+      - name: idestabelecimento
+        description: "ID único do estabelecimento"
+        tests:
+          - not_null
+
+  - name: seed_status_funcionamento_lojas
+    description: "Tabela com status de funcionamento das lojas (ativas/inativas), baseada no seed aux_status_funcionamento_lojas"
+    columns:
+      - name: idestabelecimento
+        description: "ID único do estabelecimento"
+        tests:
+          - not_null
+
+      - name: ds_sigla
+        description: "Descrição/sigla da loja"
+
+      - name: ds_unidadenegocio
+        description: "Descrição da unidade de negócio"
+
+      - name: loja_ativa
+        description: "Indicador se a loja está ativa (true/false)"
+
+  - name: sheets_metragem_lojas
+    description: "Tabela com informações de metragem das lojas, obtida diretamente do source sheets_metragem_lojas"
+    columns:
+      - name: diretor
+        description: "Nome do diretor responsável"
+
+      - name: regional
+        description: "Nome do regional responsável"
+
+      - name: sigla
+        description: "Sigla da loja"
+
+      - name: nome_fantasia
+        description: "Nome fantasia da loja"
+
+      - name: bandeira
+        description: "Bandeira/marca da loja"
+
+      - name: metragem
+        description: "Metragem da loja em metros quadrados"

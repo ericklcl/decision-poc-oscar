@@ -1,0 +1,116 @@
+version: 2
+
+models:
+  - name: dates
+    description: "Tabela de dimensão de datas contendo todas as datas de 2015 a 2040 com atributos calendário úteis para análises temporais"
+    columns:
+      - name: date_day
+        description: "Data no formato YYYY-MM-DD (chave primária da dimensão)"
+        tests:
+          - unique
+          - not_null
+
+      - name: prior_date_day
+        description: "Data do dia anterior"
+
+      - name: next_date_day
+        description: "Data do dia seguinte"
+
+      - name: prior_year_date_day
+        description: "Data do mesmo dia no ano anterior"
+
+      - name: prior_year_over_year_date_day
+        description: "Data de referência para comparação ano a ano"
+
+      - name: day_of_week
+        description: "Dia da semana como número (1 = Domingo, 7 = Sábado)"
+
+      - name: day_of_week_iso
+        description: "Dia da semana ISO (1 = Segunda-feira, 7 = Domingo)"
+
+      - name: day_of_week_name
+        description: "Nome do dia da semana"
+
+      - name: day_of_week_name_short
+        description: "Nome abreviado do dia da semana (3 caracteres)"
+
+      - name: day_of_month
+        description: "Dia do mês (1-31)"
+
+      - name: day_of_year
+        description: "Dia do ano (1-366)"
+
+      - name: week_start_date
+        description: "Data de início da semana"
+
+      - name: week_end_date
+        description: "Data de fim da semana"
+
+      - name: prior_year_week_start_date
+        description: "Data de início da semana no ano anterior"
+
+      - name: prior_year_week_end_date
+        description: "Data de fim da semana no ano anterior"
+
+      - name: week_of_year
+        description: "Semana do ano (1-53)"
+
+      - name: iso_week_start_date
+        description: "Data de início da semana ISO"
+
+      - name: iso_week_end_date
+        description: "Data de fim da semana ISO"
+
+      - name: prior_year_iso_week_start_date
+        description: "Data de início da semana ISO no ano anterior"
+
+      - name: prior_year_iso_week_end_date
+        description: "Data de fim da semana ISO no ano anterior"
+
+      - name: iso_week_of_year
+        description: "Semana ISO do ano"
+
+      - name: prior_year_week_of_year
+        description: "Semana do ano no ano anterior"
+
+      - name: prior_year_iso_week_of_year
+        description: "Semana ISO do ano no ano anterior"
+
+      - name: month_of_year
+        description: "Mês do ano (1-12)"
+
+      - name: month_name
+        description: "Nome do mês"
+
+      - name: month_name_short
+        description: "Nome abreviado do mês"
+
+      - name: month_start_date
+        description: "Primeiro dia do mês"
+
+      - name: month_end_date
+        description: "Último dia do mês"
+
+      - name: prior_year_month_start_date
+        description: "Primeiro dia do mês no ano anterior"
+
+      - name: prior_year_month_end_date
+        description: "Último dia do mês no ano anterior"
+
+      - name: quarter_of_year
+        description: "Trimestre do ano (1-4)"
+
+      - name: quarter_start_date
+        description: "Primeiro dia do trimestre"
+
+      - name: quarter_end_date
+        description: "Último dia do trimestre"
+
+      - name: year_number
+        description: "Ano como número (ex: 2023)"
+
+      - name: year_start_date
+        description: "Primeiro dia do ano (01 de janeiro)"
+
+      - name: year_end_date
+        description: "Último dia do ano (31 de dezembro)"

@@ -1,0 +1,1091 @@
+version: 2
+
+models:
+  
+  - name: mstore_enriched_gender_classifier
+    description: "Modelo em desenvolvimento - Precisa definição das colunas e tipos de dados"
+
+  - name: mstore_gender_classifier
+    description: "View com dados de classificação de gênero baseada em algoritmo de ML"
+    columns:
+      - name: idcliente
+      - name: nome
+      - name: classificacao
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_atividade
+    description: "Tabela mestre de atividades profissionais dos clientes"
+    columns:
+      - name: idatividade
+      - name: status
+      - name: descricao
+      - name: codigoab
+      - name: codigoexterno
+      - name: codigoexternojo
+      - name: idatividadef2
+      - name: atualizacadastrobeehome
+      - name: idcadastrobeehome
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_cliente
+    description: "Tabela mestre de clientes com informações pessoais e cadastrais"
+    columns:
+      - name: idcliente
+      - name: idtipopessoa
+      - name: idconjuge
+      - name: idempresaclientepf
+      - name: idendereco
+      - name: idestabelecimento
+      - name: idlimitecredito
+      - name: idtamanhocalcado
+      - name: idtimedefutebol
+      - name: idultimohistoricopesquisaspc
+      - name: idtipocadastro
+      - name: idatividade
+      - name: idanalisecredito
+      - name: idestadocivil
+      - name: status
+      - name: cpfcnpj
+      - name: rg
+      - name: rgestado
+      - name: nome
+      - name: nomereduzido
+      - name: sexo
+      - name: mae
+      - name: pai
+      - name: etnia
+      - name: inscricaoestadual
+      - name: datacadastro
+      - name: datanascimento
+      - name: dataprimeiracompranolimite
+      - name: dataultimaatualizacao
+      - name: dataultimacompra
+      - name: divulgaremail
+      - name: isrendacomprovada
+      - name: pontuacaoantiga
+      - name: possuiemail
+      - name: valorrenda
+      - name: qtdcarnespagoematraso
+      - name: qtdchequesdevolvidos
+      - name: qtdchequespagoematraso
+      - name: qtdcomprasrealizadas
+      - name: valorcarnespagoematraso
+      - name: valorchequesdevolvidos
+      - name: valorchequespagoematraso
+      - name: valormaximocomprado
+      - name: valortotalcomprado
+      - name: valorultimacompra
+      - name: observacao
+      - name: codigoab
+      - name: desabilitarabandonar
+      - name: idultimohistoricospcscore
+      - name: idciclo
+      - name: cadastradocards
+      - name: contribuinteicms
+      - name: rendacomprovada
+      - name: grupoorigem
+      - name: migradofoto
+      - name: migradoizio
+      - name: idocupacao
+      - name: situacaoempregaticia
+      - name: utilizaoverlimitfestclub
+      - name: codigoprodutooscar
+      - name: codigoprodutojo
+      - name: faturadigitaltipo
+      - name: orgaoemissor
+      - name: cidadenatal
+      - name: ufnatal
+      - name: dataemissaodocumento
+      - name: integrador
+      - name: receberwhatsapp
+      - name: codigoprodutoabys
+      - name: possuisenhapadrao
+      - name: codigoexterno
+      - name: cadastradopointus
+      - name: codigoprodutocarioca
+      - name: codigoproduto
+      - name: isfidelidadepointus
+      - name: pinsuframa
+      - name: fidelidadepointus
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_contatocliente
+    description: "Tabela de contatos dos clientes (telefones, emails)"
+    columns:
+      - name: idcontatocliente
+      - name: idcliente
+      - name: idtipocontato
+      - name: status
+      - name: descricao
+      - name: codigoab
+      - name: observacao
+      - name: ddd
+      - name: enviasms
+      - name: enviaemail
+      - name: validoemail
+      - name: codigoexterno
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_cor
+    description: "Tabela mestre de cores dos produtos"
+    columns:
+      - name: idcor
+      - name: status
+      - name: descricao
+      - name: codigoab
+      - name: codigoexterno
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_departamento
+    description: "Tabela mestre de departamentos da empresa"
+    columns:
+      - name: iddepartamento
+      - name: status
+      - name: descricao
+      - name: codigoab
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_endereco
+    description: "Tabela de endereços dos clientes e estabelecimentos"
+    columns:
+      - name: idendereco
+      - name: cep
+      - name: uf
+      - name: localidade
+      - name: bairro
+      - name: numero
+      - name: complemento
+      - name: logradouro
+      - name: codigoab
+      - name: tipomoradia
+      - name: codigomunicipio
+      - name: codigoexterno
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_estabelecimento
+    description: "Tabela mestre de estabelecimentos/lojas com informações cadastrais e operação"
+    columns:
+      - name: idestabelecimento
+      - name: status
+      - name: razaosocial
+      - name: nomefantasia
+      - name: cnpj
+      - name: inscricaoestadual
+      - name: idendereco
+      - name: sigla
+      - name: observacao
+      - name: tipo
+      - name: idunidadenegocio
+      - name: defeito
+      - name: codigoab
+      - name: crt
+      - name: idcsc
+      - name: csc
+      - name: logomarca
+      - name: codigolojacards
+      - name: permitirmovimentacao
+      - name: nomemobile
+      - name: longitude
+      - name: latitude
+      - name: tptrib
+      - name: idgrupof
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_estadocivil
+    description: "Tabela mestre de estados civis"
+    columns:
+      - name: idestadocivil
+      - name: estadocivil
+      - name: descricao
+      - name: codigoab
+      - name: codigoexterno
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_estoque
+    description: "Tabela de estoque atual dos produtos por loja com quantidades, preços e informações de custo"
+    columns:
+      - name: idestoque
+      - name: status
+      - name: idestabelecimento
+      - name: idproduto
+      - name: quantidade
+      - name: codigoantigo
+      - name: precovenda
+      - name: precopromocao
+      - name: codigobarra
+      - name: promocao
+      - name: icms
+      - name: primeiroprecovenda
+      - name: codigoab
+      - name: migradoseek
+      - name: valorcustomedio
+      - name: codigoexterno
+      - name: valorultimocustomedio
+      - name: valorcusto
+      - name: codigoexternopaqueta
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_fornecedor
+    description: "Tabela mestre de fornecedores com informações cadastrais e pessoais"
+    columns:
+      - name: idfornecedor
+      - name: idtipopessoa
+      - name: idatividade
+      - name: idconjuge
+      - name: idestadocivil
+      - name: idendereco
+      - name: status
+      - name: cpfcnpj
+      - name: rg
+      - name: nome
+      - name: nomereduzido
+      - name: sexo
+      - name: mae
+      - name: pai
+      - name: datanascimento
+      - name: inscricaoestadual
+      - name: observacao
+      - name: idfornecedorecommerce
+      - name: codigoab
+      - name: codigoexterno
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento do registro"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_funcionario
+    description: "Tabela mestre de funcionários com informações pessoais, comissões e limites"
+    columns:
+      - name: idfuncionario
+      - name: comissaoacimameta
+      - name: comissaoentremetas
+      - name: comissaoabaixometa
+      - name: limitecompras
+      - name: comprasrealizadas
+      - name: porcentagemmaximadesconto
+      - name: idusuario
+      - name: idestabelecimento
+      - name: salario
+      - name: datanascimento
+      - name: cpf
+      - name: conjuge
+      - name: mae
+      - name: pai
+      - name: sexo
+      - name: rg
+      - name: idatividade
+      - name: nome
+      - name: nomereduzido
+      - name: observacao
+      - name: idendereco
+      - name: status
+      - name: idfuncionarioold
+      - name: idestadocivil
+      - name: codigoab
+      - name: centrodecusto
+      - name: cadastradocontadigital
+      - name: atualizacadastrobeehome
+      - name: codigoexterno
+      - name: idcadastrobeehome
+      - name: dataadmissao
+      - name: isbackoffice
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_grupof
+    description: "Tabela de grupos de funcionários"
+    columns:
+      - name: idgrupof
+      - name: status
+      - name: descricao
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_grupoproduto
+    description: "Tabela mestre de grupos de produtos"
+    columns:
+      - name: idgrupoproduto
+      - name: status
+      - name: descricao
+      - name: idgrupoprodutoecommerce
+      - name: codigoab
+      - name: imprimirpreco
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_marca
+    description: "Tabela mestre de marcas dos produtos"
+    columns:
+      - name: idmarca
+      - name: status
+      - name: descricao
+      - name: idmarcaecommerce
+      - name: codigoab
+      - name: codigoexterno
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_marcafornecedor
+    description: "Relacionamento entre marcas e fornecedores"
+    columns:
+      - name: idmarcafornecedor
+      - name: idmarca
+      - name: idfornecedor
+      - name: codigoab
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_material
+    description: "Tabela mestre de materiais dos produtos"
+    columns:
+      - name: idmaterial
+      - name: status
+      - name: descricao
+      - name: codigoab
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_metaprodutosportal
+    description: "Metadados de produtos para portal web"
+    columns:
+      - name: idmetaprodutosportal
+      - name: iddepartamento
+      - name: idgrupoproduto
+      - name: idsecao
+      - name: idfamilia
+      - name: codigoab
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_notafiscal
+    description: "Tabela atual de notas fiscais (mesma estrutura do histórico)"
+    columns:
+      - name: idnotafiscal
+      - name: numeronota
+      - name: icms
+      - name: valorbaseicms
+      - name: valoricms
+      - name: valorbaseicmssubstituicao
+      - name: valoricmssubstituicao
+      - name: valortotalprodutos
+      - name: valorfrete
+      - name: valorseguro
+      - name: outrasdespesas
+      - name: valortotalipi
+      - name: valortotalnota
+      - name: observacao
+      - name: data
+      - name: idestabelecimento
+      - name: dataemissao
+      - name: dataconfirmacao
+      - name: idusuarioconfirmacao
+      - name: idconhecimento
+      - name: jaalteroucodigobarra
+      - name: idusuariocadastro
+      - name: divergencias
+      - name: idusuariocancelamento
+      - name: datacancelamento
+      - name: status
+      - name: porcentagemdesconto
+      - name: descricaodivergencias
+      - name: notacarteira
+      - name: tipoipi
+      - name: idfornecedor
+      - name: cnpj
+      - name: codigoab
+      - name: numeronfe
+      - name: porcentagemdereducaodebase
+      - name: usadonfedevolucao
+      - name: isbonificado
+      - name: serie
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: op
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_orcamento
+    description: "Tabela atual de orçamentos (mesma estrutura do histórico)"
+    columns:
+      - name: idorcamento
+      - name: status
+      - name: data
+      - name: tempo
+      - name: observacao
+      - name: idvendedor
+      - name: descontopercentual
+      - name: descontovalor
+      - name: totaldepecas
+      - name: valorbruto
+      - name: valor
+      - name: idusuario
+      - name: idusuarioautorizacao
+      - name: idusuariocancelamento
+      - name: datacancelamento
+      - name: idestabelecimento
+      - name: idpontovenda
+      - name: valefuncionario
+      - name: nomecliente
+      - name: idcondicaopagamento
+      - name: perfilcliente
+      - name: idtroca
+      - name: observacaocancelamento
+      - name: acrescimopercentual
+      - name: codigocondicaopagamentocards
+      - name: descricondicaopagamentocards
+      - name: retiradodoestoque
+      - name: idcaixa
+      - name: idvenda
+      - name: idcliente
+      - name: idusuariocaixa
+      - name: dataconfirmacao
+      - name: codigoab
+      - name: cpfcnpj
+      - name: idultimohistoricospcscore
+      - name: idultimohistoricopesquisaspc
+      - name: ticket
+      - name: statusconferencia
+      - name: idusuarioconferencia
+      - name: valorcupomdesconto
+      - name: valorfrete
+      - name: chaveseguranca
+      - name: codigovalefuncionario
+      - name: cpfcnpjdependente
+      - name: valorkitdesconto
+      - name: idcupomdescontocliente
+      - name: valorcashback
+      - name: autoatendimento
+      - name: tipocupomdesconto
+      - name: idtransacaosolucx
+      - name: orcamentoeditadoflag
+      - name: orcamentowebstoreflag
+      - name: integrador
+      - name: orcamentobaixado
+      - name: idlojavendedor
+      - name: codigoexterno
+      - name: descontofidelidade
+      - name: codigoresgatefidelidade
+      - name: statusresgatefidelidade
+      - name: pedidoecommerce
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: op
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_orcamentoproduto
+    description: "Produtos incluídos nos orçamentos (mesma estrutura do histórico)"
+    columns:
+      - name: idorcamentoproduto
+      - name: valorvenda
+      - name: idorcamento
+      - name: quantidade
+      - name: idproduto
+      - name: valorcusto
+      - name: descontovalor
+      - name: foradelinha
+      - name: premio
+      - name: closeout
+      - name: codigoab
+      - name: retiradodoestoquepelatroca
+      - name: conferido
+      - name: ehpresente
+      - name: valorkitdesconto
+      - name: ehkitproduto
+      - name: tipokitprodutoaplicado
+      - name: agrupamentopresente
+      - name: ehbrinde
+      - name: valorcashback
+      - name: ehkitprodutobrinde
+      - name: tipokitproduto
+      - name: valorcupomdesconto
+      - name: statusprodutonovo
+      - name: valordescontofuncionario
+      - name: freterateado
+      - name: codigoexterno
+      - name: customedioproduto
+      - name: customedioprodutoconsolidado
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: op
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_orcamentotroca
+    description: "Trocas associadas aos orçamentos (mesma estrutura do histórico)"
+    columns:
+      - name: idorcamentotroca
+      - name: idorcamento
+      - name: idtroca
+      - name: codigoab
+      - name: codigoexterno
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: op
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_produto
+    description: "Tabela mestre de produtos com informações de custo, preço e características"
+    columns:
+      - name: idproduto
+      - name: dataultimavenda
+      - name: dataultimaentrada
+      - name: foradelinha
+      - name: nome
+      - name: nomeimpressao
+      - name: idreferenciaproduto
+      - name: idcor
+      - name: idtamanho
+      - name: valorcusto
+      - name: valorcomfrete
+      - name: precobase
+      - name: dataforadelinha
+      - name: status
+      - name: idproduto_old
+      - name: codigobarramigracao
+      - name: dataultimaalteracao
+      - name: idcondpagultimaentrada
+      - name: premio
+      - name: pontos
+      - name: closeout
+      - name: dt_envio_ecommerce
+      - name: ecommerce
+      - name: codigoab
+      - name: iddepartamento
+      - name: dataultimamovimentacao
+      - name: ean
+      - name: codigoalfa
+      - name: precovenda
+      - name: primeiroprecovenda
+      - name: migradoizio
+      - name: visivel_ecommerce
+      - name: valorcustomedio
+      - name: codigoexterno
+      - name: codigoexternopaqueta
+      - name: sku_paqueta
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_produtodanota
+    description: "Produtos das notas fiscais atuais (mesma estrutura do histórico)"
+    columns:
+      - name: idprodutodanota
+      - name: ipi
+      - name: precodevenda
+      - name: precodecusto
+      - name: quantidade
+      - name: idproduto
+      - name: idnotafiscal
+      - name: precocustopedido
+      - name: quantidadeitensextra
+      - name: quantidadeitensperdida
+      - name: idpedido
+      - name: acrescimo
+      - name: desconto
+      - name: codigobarra
+      - name: notafiscalcancelada
+      - name: foradelinha
+      - name: precodecustoreal
+      - name: closeout
+      - name: codigoab
+      - name: cprod
+      - name: ncm
+      - name: origem
+      - name: op
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_produtoespecifico
+    description: "Informações específicas detalhadas dos produtos"
+    columns:
+      - name: idprodutoespecifico
+      - name: status
+      - name: idprodutogenerico
+      - name: descricao
+      - name: idsubfamiliaecommerce
+      - name: codigoab
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_produtogenerico
+    description: "Informações genéricas dos produtos"
+    columns:
+      - name: idprodutogenerico
+      - name: idgrupoproduto
+      - name: markupminimo
+      - name: status
+      - name: descricao
+      - name: idfamiliaecommerce
+      - name: codigoab
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_produtotroca
+    description: "Produtos envolvidos em trocas atuais"
+    columns:
+      - name: idprodutotroca
+      - name: status
+      - name: idproduto
+      - name: quantidade
+      - name: idtroca
+      - name: valor
+      - name: idmotivotroca
+      - name: idusuariodevolucao
+      - name: datadevolucao
+      - name: observacao
+      - name: foradelinha
+      - name: closeout
+      - name: codigoab
+      - name: codigoexterno
+      - name: customedioproduto
+      - name: customedioprodutoconsolidado
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_referenciaproduto
+    description: "Tabela de referências/códigos dos produtos"
+    columns:
+      - name: idreferenciaproduto
+      - name: referencia
+      - name: idgrupoproduto
+      - name: idprodutogenerico
+      - name: idprodutoespecifico
+      - name: idmarca
+      - name: idmaterial
+      - name: idunidade
+      - name: idcomprador
+      - name: tiponacionalidade
+      - name: tipocodigobarra
+      - name: idsecao
+      - name: descricaoresumida
+      - name: status
+      - name: idgrade
+      - name: idtributacao
+      - name: idfornecedor
+      - name: codigoab
+      - name: substituicaotributaria
+      - name: ncm
+      - name: origemproduto
+      - name: reducaobaseicms
+      - name: tipo
+      - name: cest
+      - name: urlecommerce
+      - name: datacadastro
+      - name: dataprimeiraentrada
+      - name: statusprodutonovo
+      - name: dataprodutoantigo
+      - name: codigoexterno
+      - name: produtodiadora
+      - name: codigoexternopaqueta
+      - name: cstpiscofinsvenda
+      - name: cstpiscofinsremessa
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_secao
+    description: "Tabela mestre de seções organizacionais"
+    columns:
+      - name: idsecao
+      - name: markupminimo
+      - name: status
+      - name: descricao
+      - name: idsecaoecommerce
+      - name: codigoab
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_situacaoproduto
+    description: "Situações/status dos produtos (ativo, descontinuado, etc.)"
+    columns:
+      - name: idsituacaoproduto
+      - name: status
+      - name: descricao
+      - name: sigla
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_tamanho
+    description: "Tabela mestre de tamanhos dos produtos"
+    columns:
+      - name: idtamanho
+      - name: status
+      - name: descricao
+      - name: ordemtamanho
+      - name: codigoab
+      - name: valorfloat
+      - name: descricaoecommerce
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_troca
+    description: "Tabela atual de trocas realizadas (mesma estrutura do histórico)"
+    columns:
+      - name: idtroca
+      - name: status
+      - name: data
+      - name: idorcamento
+      - name: nomecliente
+      - name: idestabelecimento
+      - name: idpontovenda
+      - name: idusuario
+      - name: quantidadeprodutos
+      - name: valortotalprodutos
+      - name: istrocado
+      - name: idusuariocancelamento
+      - name: datacancelamento
+      - name: idcaixa
+      - name: codigocliente
+      - name: idcliente
+      - name: codigoab
+      - name: motivocancelamento
+      - name: idnfe
+      - name: codigoexterno
+      - name: idnfedevolucao
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+  - name: mstore_t_unidadenegocio
+    description: "Tabela mestre de unidades de negócio"
+    columns:
+      - name: idunidadenegocio
+      - name: status
+      - name: descricao
+      - name: codigoab
+      - name: atualizacadastrobeehome
+      - name: idcadastrobeehome
+      - name: _dms_loaded_at
+        description: "Timestamp DMS de carregamento"
+      - name: s3_file_name
+        description: "Nome do arquivo S3 de origem"
+      - name: s3_file_row_number
+        description: "Número da linha no arquivo original"
+      - name: s3_file_last_modified
+        description: "Timestamp de modificação do arquivo S3"
+      - name: load_timestamp_utc
+        description: "Timestamp de carregamento no Snowflake"
+      - name: record_source
+        description: "Sistema/processo de origem do registro"
+
+# Observações sobre a estrutura padrão:
+# - Todos os modelos são views que extraem dados de sources JSON (raw_json.jsn_*)
+# - Estrutura comum: JSON_DATA com extração de campos + metadados S3 (nome arquivo, linha, timestamps)
+# - Metadados de auditoria: S3_FILE_NAME, S3_FILE_ROW_NUMBER, S3_FILE_LAST_MODIFIED, LOAD_TIMESTAMP_UTC, RECORD_SOURCE
