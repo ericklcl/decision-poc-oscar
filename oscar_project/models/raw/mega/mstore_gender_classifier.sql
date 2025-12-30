@@ -11,7 +11,7 @@ WITH mstore_gender_classifier AS (
       nome,
       classificacao
  
-    FROM {{ source('raw_data', 'mstore_enriched_gender_classifier') }}
+    FROM {{ ref('mstore_enriched_gender_classifier') }}
  
 )
  
