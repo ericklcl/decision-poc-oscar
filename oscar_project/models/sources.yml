@@ -702,8 +702,6 @@ sources:
     tables:
       - name: mstore_history_estoque
         description: Tabela do MEGA que contém a posição de estoque no final de cada mês. (Tabela histórica)
-      - name: mstore_enriched_gender_classifier
-        description: Tabela do MEGA enriquecida via script python para classificar o gênero do cliente baseado no nome (AWS Glue - Domingo)
 
   - name: raw_input
     description: Tabelas de entrada brutas carregadas via planilhas.

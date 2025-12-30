@@ -4,6 +4,10 @@ models:
   
   - name: mstore_enriched_gender_classifier
     description: "Modelo em desenvolvimento - Precisa definição das colunas e tipos de dados"
+    columns:
+      - name: idcliente
+      - name: nome
+      - name: classificacao
 
   - name: mstore_gender_classifier
     description: "View com dados de classificação de gênero baseada em algoritmo de ML"
