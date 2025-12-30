@@ -24,9 +24,30 @@ def model(dbt, session):
         materialized="table",
         packages=["pandas"] # O Snowflake carregará o pandas no warehouse
     )
+    
+    # Fonte: mstore_t_cliente contém idcliente, nome, _dms_loaded_at
+    df_clientes = dbt.ref("mstore_t_cliente").to_pandas()
 
-    # Lendo os dados (O dbt resolve as dependências automaticamente)
-    df_clientes = dbt.ref("stg_t_cliente_classificador").to_pandas()
+    # 1) Regra equivalente ao SPLIT_PART(nome, ' ', 1)
+    #    (trata null e espaços extras)
+    df_clientes["PRIMEIRO_NOME"] = (
+        df_clientes["nome"]
+        .fillna("")
+        .astype(str)
+        .str.strip()
+        .str.split(r"\s+", n=1, expand=False)
+        .str[0]
+    )
+
+    # 2) Regra equivalente ao TO_CHAR(_dms_loaded_at, 'YYYY-MM-DD')
+    #    (garante datetime e formata)
+    df_clientes["_dms_loaded_at"] = pd.to_datetime(
+        df_clientes["_dms_loaded_at"],
+        errors="coerce"
+    )
+    df_clientes["dt_carga"] = df_clientes["_dms_loaded_at"].dt.strftime("%Y-%m-%d")
+
+    # Carregando a tabela auxiliar de nomes do IBGE
     df_ibge = dbt.ref("aux_nomes").to_pandas()
 
     # Montando o dicionário de classificação
