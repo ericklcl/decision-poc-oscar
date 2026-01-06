@@ -66,3 +66,22 @@ seeds:
 
     aux_status_funcionamento_lojas:
       +enabled: true
+
+vars:
+  raw_json_copy:
+    stage_base: "@RAW.STAGE_SUPPLYCHAIN/landing"
+    file_format_name: "RAW.PARQUET_FILE_FORMAT"
+    force_copy: false
+    record_source: "mstore"
+
+    tables:
+      - source_name: "raw_json"
+        target_table: "jsn_mstore_enriched_gender_classifier"
+        s3_folder: "table1"
+        # pattern: ".*\\.parquet"   # opcional
+
+      - source_name: "raw_json"
+        target_table: "jsn_mstore_history_estoque"
+        s3_folder: "table2"
+
+
