@@ -69,19 +69,221 @@ seeds:
 
 vars:
   raw_json_copy:
-    stage_base: "@RAW.STAGE_SUPPLYCHAIN/landing"
-    file_format_name: "RAW.PARQUET_FILE_FORMAT"
+    stage_base: "@RAW_JSON.landing_poc_stage"
+    file_format_name: "RAW_JSON.PARQUET_FILE_FORMAT"
     force_copy: false
     record_source: "mstore"
 
     tables:
       - source_name: "raw_json"
-        target_table: "jsn_mstore_enriched_gender_classifier"
-        s3_folder: "table1"
-        # pattern: ".*\\.parquet"   # opcional
-
+        target_table: "JSN_MSTORE_ENRICHED_GENDER_CLASSIFIER"
+        s3_folder: "MSTORE_ENRICHED_GENDER_CLASSIFIER"
+      
+      
       - source_name: "raw_json"
-        target_table: "jsn_mstore_history_estoque"
-        s3_folder: "table2"
+        target_table: "JSN_MSTORE_HISTORY_ESTOQUE"
+        s3_folder: "MSTORE_HISTORY_ESTOQUE"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_HISTORY_T_NOTAFISCAL"
+        s3_folder: "MSTORE_HISTORY_T_NOTAFISCAL"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_HISTORY_T_ORCAMENTO"
+        s3_folder: "MSTORE_HISTORY_T_ORCAMENTO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_HISTORY_T_ORCAMENTOPRODUTO"
+        s3_folder: "MSTORE_HISTORY_T_ORCAMENTOPRODUTO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_HISTORY_T_ORCAMENTOTROCA"
+        s3_folder: "MSTORE_HISTORY_T_ORCAMENTOTROCA"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_HISTORY_T_PRODUTODANOTA"
+        s3_folder: "MSTORE_HISTORY_T_PRODUTODANOTA"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_HISTORY_T_PRODUTOTROCA"
+        s3_folder: "MSTORE_HISTORY_T_PRODUTOTROCA"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_HISTORY_T_TROCA"
+        s3_folder: "MSTORE_HISTORY_T_TROCA"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_ATIVIDADE"
+        s3_folder: "MSTORE_T_ATIVIDADE"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_CLIENTE"
+        s3_folder: "MSTORE_T_CLIENTE"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_CONTATOCLIENTE"
+        s3_folder: "MSTORE_T_CONTATOCLIENTE"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_COR"
+        s3_folder: "MSTORE_T_COR"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_DEPARTAMENTO"
+        s3_folder: "MSTORE_T_DEPARTAMENTO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_ENDERECO"
+        s3_folder: "MSTORE_T_ENDERECO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_ESTABELECIMENTO"
+        s3_folder: "MSTORE_T_ESTABELECIMENTO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_ESTADOCIVIL"
+        s3_folder: "MSTORE_T_ESTADOCIVIL"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_ESTOQUE"
+        s3_folder: "MSTORE_T_ESTOQUE"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_FORNECEDOR"
+        s3_folder: "MSTORE_T_FORNECEDOR"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_FUNCIONARIO"
+        s3_folder: "MSTORE_T_FUNCIONARIO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_GRUPOF"
+        s3_folder: "MSTORE_T_GRUPOF"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_GRUPOPRODUTO"
+        s3_folder: "MSTORE_T_GRUPOPRODUTO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_MARCA"
+        s3_folder: "MSTORE_T_MARCA"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_MARCAFORNECEDOR"
+        s3_folder: "MSTORE_T_MARCAFORNECEDOR"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_MATERIAL"
+        s3_folder: "MSTORE_T_MATERIAL"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_METAPRODUTOSPORTAL"
+        s3_folder: "MSTORE_T_METAPRODUTOSPORTAL"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_NOTAFISCAL"
+        s3_folder: "MSTORE_T_NOTAFISCAL"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_ORCAMENTO"
+        s3_folder: "MSTORE_T_ORCAMENTO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_ORCAMENTOPRODUTO"
+        s3_folder: "MSTORE_T_ORCAMENTOPRODUTO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_ORCAMENTOTROCA"
+        s3_folder: "MSTORE_T_ORCAMENTOTROCA"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_PRODUTO"
+        s3_folder: "MSTORE_T_PRODUTO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_PRODUTODANOTA"
+        s3_folder: "MSTORE_T_PRODUTODANOTA"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_PRODUTOESPECIFICO"
+        s3_folder: "MSTORE_T_PRODUTOESPECIFICO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_PRODUTOGENERICO"
+        s3_folder: "MSTORE_T_PRODUTOGENERICO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_PRODUTOTROCA"
+        s3_folder: "MSTORE_T_PRODUTOTROCA"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_REFERENCIAPRODUTO"
+        s3_folder: "MSTORE_T_REFERENCIAPRODUTO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_SECAO"
+        s3_folder: "MSTORE_T_SECAO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_SITUACAOPRODUTO"
+        s3_folder: "MSTORE_T_SITUACAOPRODUTO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_TAMANHO"
+        s3_folder: "MSTORE_T_TAMANHO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_TROCA"
+        s3_folder: "MSTORE_T_TROCA"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_MSTORE_T_UNIDADENEGOCIO"
+        s3_folder: "MSTORE_T_UNIDADENEGOCIO"
+      
+      
+      - source_name: "raw_json"
+        target_table: "JSN_SHEETS_METRAGEM_LOJAS"
+        s3_folder: "SHEETS_METRAGEM_LOJAS"
+
+
 
 
