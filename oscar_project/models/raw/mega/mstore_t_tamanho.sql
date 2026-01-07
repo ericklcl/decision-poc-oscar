@@ -17,14 +17,14 @@ WITH raw_data AS (
 
 SELECT
     -- Colunas extraídas do JSON usando sintaxe Snowflake JSON_DATA:campo::TIPO
-    JSON_DATA:idtamanho::NUMBER AS idtamanho,
-    JSON_DATA:status::VARCHAR AS status,
-    JSON_DATA:descricao::VARCHAR AS descricao,
-    JSON_DATA:ordemtamanho::NUMBER AS ordemtamanho,
-    JSON_DATA:codigoab::NUMBER AS codigoab,
-    JSON_DATA:valorfloat::NUMBER AS valorfloat,
-    JSON_DATA:descricaoecommerce::VARCHAR AS descricaoecommerce,
-    JSON_DATA:_dms_loaded_at::TIMESTAMP_NTZ AS _dms_loaded_at,
+    JSON_DATA:IDTAMANHO::NUMBER AS IDTAMANHO,
+    JSON_DATA:STATUS::VARCHAR AS STATUS,
+    JSON_DATA:DESCRICAO::VARCHAR AS DESCRICAO,
+    JSON_DATA:ORDEMTAMANHO::NUMBER AS ORDEMTAMANHO,
+    JSON_DATA:CODIGOAB::NUMBER AS CODIGOAB,
+    JSON_DATA:VALORFLOAT::NUMBER AS VALORFLOAT,
+    JSON_DATA:DESCRICAOECOMMERCE::VARCHAR AS DESCRICAOECOMMERCE,
+    JSON_DATA:_DMS_LOADED_AT::TIMESTAMP_NTZ AS _DMS_LOADED_AT,
     
     -- Metadados preservados para auditoria e rastreabilidade
     S3_FILE_NAME,              -- Arquivo de origem no S3

@@ -17,16 +17,16 @@ WITH raw_data AS (
 
 SELECT
     -- Colunas extraídas do JSON usando sintaxe Snowflake JSON_DATA:campo::TIPO
-    JSON_DATA:idatividade::NUMBER AS idatividade,
-    JSON_DATA:status::VARCHAR AS status,
-    JSON_DATA:descricao::VARCHAR AS descricao,
-    JSON_DATA:codigoab::NUMBER AS codigoab,
-    JSON_DATA:codigoexterno::NUMBER AS codigoexterno,
-    JSON_DATA:codigoexternojo::NUMBER AS codigoexternojo,
-    JSON_DATA:idatividadef2::NUMBER AS idatividadef2,
-    JSON_DATA:atualizacadastrobeehome::VARCHAR AS atualizacadastrobeehome,
-    JSON_DATA:idcadastrobeehome::NUMBER AS idcadastrobeehome,
-    JSON_DATA:_dms_loaded_at::TIMESTAMP_NTZ AS _dms_loaded_at,
+    JSON_DATA:IDATIVIDADE::NUMBER AS IDATIVIDADE,
+    JSON_DATA:STATUS::VARCHAR AS STATUS,
+    JSON_DATA:DESCRICAO::VARCHAR AS DESCRICAO,
+    JSON_DATA:CODIGOAB::NUMBER AS CODIGOAB,
+    JSON_DATA:CODIGOEXTERNO::NUMBER AS CODIGOEXTERNO,
+    JSON_DATA:CODIGOEXTERNOJO::NUMBER AS CODIGOEXTERNOJO,
+    JSON_DATA:IDATIVIDADEF2::NUMBER AS IDATIVIDADEF2,
+    JSON_DATA:ATUALIZACADASTROBEEHOME::VARCHAR AS ATUALIZACADASTROBEEHOME,
+    JSON_DATA:IDCADASTROBEEHOME::NUMBER AS IDCADASTROBEEHOME,
+    JSON_DATA:_DMS_LOADED_AT::TIMESTAMP_NTZ AS _DMS_LOADED_AT,
     
     -- Metadados preservados para auditoria e rastreabilidade
     S3_FILE_NAME,              -- Arquivo de origem no S3

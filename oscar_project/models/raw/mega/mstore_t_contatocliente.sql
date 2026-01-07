@@ -17,19 +17,19 @@ WITH raw_data AS (
 
 SELECT
     -- Colunas extraídas do JSON usando sintaxe Snowflake JSON_DATA:campo::TIPO
-    JSON_DATA:idcontatocliente::NUMBER AS idcontatocliente,
-    JSON_DATA:idcliente::NUMBER AS idcliente,
-    JSON_DATA:idtipocontato::NUMBER AS idtipocontato,
-    JSON_DATA:status::VARCHAR AS status,
-    JSON_DATA:descricao::VARCHAR AS descricao,
-    JSON_DATA:codigoab::NUMBER AS codigoab,
-    JSON_DATA:observacao::VARCHAR AS observacao,
-    JSON_DATA:ddd::VARCHAR AS ddd,
-    JSON_DATA:enviasms::VARCHAR AS enviasms,
-    JSON_DATA:enviaemail::VARCHAR AS enviaemail,
-    JSON_DATA:validoemail::VARCHAR AS validoemail,
-    JSON_DATA:codigoexterno::VARCHAR AS codigoexterno,
-    JSON_DATA:_dms_loaded_at::TIMESTAMP_NTZ AS _dms_loaded_at,
+    JSON_DATA:IDCONTATOCLIENTE::NUMBER AS IDCONTATOCLIENTE,
+    JSON_DATA:IDCLIENTE::NUMBER AS IDCLIENTE,
+    JSON_DATA:IDTIPOCONTATO::NUMBER AS IDTIPOCONTATO,
+    JSON_DATA:STATUS::VARCHAR AS STATUS,
+    JSON_DATA:DESCRICAO::VARCHAR AS DESCRICAO,
+    JSON_DATA:CODIGOAB::NUMBER AS CODIGOAB,
+    JSON_DATA:OBSERVACAO::VARCHAR AS OBSERVACAO,
+    JSON_DATA:DDD::VARCHAR AS DDD,
+    JSON_DATA:ENVIASMS::VARCHAR AS ENVIASMS,
+    JSON_DATA:ENVIAEMAIL::VARCHAR AS ENVIAEMAIL,
+    JSON_DATA:VALIDOEMAIL::VARCHAR AS VALIDOEMAIL,
+    JSON_DATA:CODIGOEXTERNO::VARCHAR AS CODIGOEXTERNO,
+    JSON_DATA:_DMS_LOADED_AT::TIMESTAMP_NTZ AS _DMS_LOADED_AT,
     
     -- Metadados preservados para auditoria e rastreabilidade
     S3_FILE_NAME,              -- Arquivo de origem no S3

@@ -17,13 +17,13 @@ WITH raw_data AS (
 
 SELECT
     -- Colunas extraídas do JSON usando sintaxe Snowflake JSON_DATA:campo::TIPO
-    JSON_DATA:idorcamentotroca::NUMBER AS idorcamentotroca,
-    JSON_DATA:idorcamento::NUMBER AS idorcamento,
-    JSON_DATA:idtroca::NUMBER AS idtroca,
-    JSON_DATA:codigoab::NUMBER AS codigoab,
-    JSON_DATA:codigoexterno::VARCHAR AS codigoexterno,
-    JSON_DATA:_dms_loaded_at::TIMESTAMP_NTZ AS _dms_loaded_at,
-    JSON_DATA:op::VARCHAR AS op,
+    JSON_DATA:IDORCAMENTOTROCA::NUMBER AS IDORCAMENTOTROCA,
+    JSON_DATA:IDORCAMENTO::NUMBER AS IDORCAMENTO,
+    JSON_DATA:IDTROCA::NUMBER AS IDTROCA,
+    JSON_DATA:CODIGOAB::NUMBER AS CODIGOAB,
+    JSON_DATA:CODIGOEXTERNO::VARCHAR AS CODIGOEXTERNO,
+    JSON_DATA:_DMS_LOADED_AT::TIMESTAMP_NTZ AS _DMS_LOADED_AT,
+    JSON_DATA:OP::VARCHAR AS OP,
     
     -- Metadados preservados para auditoria e rastreabilidade
     S3_FILE_NAME,              -- Arquivo de origem no S3

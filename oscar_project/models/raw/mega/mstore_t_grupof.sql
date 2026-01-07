@@ -17,10 +17,10 @@ WITH raw_data AS (
 
 SELECT
     -- Colunas extraídas do JSON usando sintaxe Snowflake JSON_DATA:campo::TIPO
-    JSON_DATA:idgrupof::NUMBER AS idgrupof,
-    JSON_DATA:status::VARCHAR AS status,
-    JSON_DATA:descricao::VARCHAR AS descricao,
-    JSON_DATA:_dms_loaded_at::TIMESTAMP_NTZ AS _dms_loaded_at,
+    JSON_DATA:IDGRUPOF::NUMBER AS IDGRUPOF,
+    JSON_DATA:STATUS::VARCHAR AS STATUS,
+    JSON_DATA:DESCRICAO::VARCHAR AS DESCRICAO,
+    JSON_DATA:_DMS_LOADED_AT::TIMESTAMP_NTZ AS _DMS_LOADED_AT,
     
     -- Metadados preservados para auditoria e rastreabilidade
     S3_FILE_NAME,              -- Arquivo de origem no S3

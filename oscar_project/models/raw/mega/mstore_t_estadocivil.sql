@@ -17,12 +17,12 @@ WITH raw_data AS (
 
 SELECT
     -- Colunas extraídas do JSON usando sintaxe Snowflake JSON_DATA:campo::TIPO
-    JSON_DATA:idestadocivil::NUMBER AS idestadocivil,
-    JSON_DATA:estadocivil::VARCHAR AS estadocivil,
-    JSON_DATA:descricao::VARCHAR AS descricao,
-    JSON_DATA:codigoab::NUMBER AS codigoab,
-    JSON_DATA:codigoexterno::NUMBER AS codigoexterno,
-    JSON_DATA:_dms_loaded_at::TIMESTAMP_NTZ AS _dms_loaded_at,
+    JSON_DATA:IDESTADOCIVIL::NUMBER AS IDESTADOCIVIL,
+    JSON_DATA:ESTADOCIVIL::VARCHAR AS ESTADOCIVIL,
+    JSON_DATA:DESCRICAO::VARCHAR AS DESCRICAO,
+    JSON_DATA:CODIGOAB::NUMBER AS CODIGOAB,
+    JSON_DATA:CODIGOEXTERNO::NUMBER AS CODIGOEXTERNO,
+    JSON_DATA:_DMS_LOADED_AT::TIMESTAMP_NTZ AS _DMS_LOADED_AT,
     
     -- Metadados preservados para auditoria e rastreabilidade
     S3_FILE_NAME,              -- Arquivo de origem no S3

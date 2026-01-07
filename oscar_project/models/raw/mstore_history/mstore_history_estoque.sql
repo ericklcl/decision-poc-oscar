@@ -17,16 +17,16 @@ WITH raw_data AS (
 
 SELECT
     -- Colunas extraídas do JSON usando sintaxe Snowflake JSON_DATA:campo::TIPO
-    JSON_DATA:sk_produto::NUMBER AS sk_produto,
-    JSON_DATA:sk_data::VARCHAR AS sk_data,
-    JSON_DATA:sk_loja::NUMBER AS sk_loja,
-    JSON_DATA:qtd_estoque_pecas::NUMBER AS qtd_estoque_pecas,
-    JSON_DATA:vlr_estoque_venda::VARCHAR AS vlr_estoque_venda,
-    JSON_DATA:vlr_estoque_custo_sem_imposto::VARCHAR AS vlr_estoque_custo_sem_imposto,
-    JSON_DATA:vlr_estoque_custo_com_imposto::VARCHAR AS vlr_estoque_custo_com_imposto,
-    JSON_DATA:num_idade_estoque::VARCHAR AS num_idade_estoque,
-    JSON_DATA:ds_faixa_de_idade_dd::VARCHAR AS ds_faixa_de_idade_dd
-    JSON_DATA:_dms_loaded_at::TIMESTAMP_NTZ AS _dms_loaded_at,
+    JSON_DATA:SK_PRODUTO::NUMBER AS SK_PRODUTO,
+    JSON_DATA:SK_DATA::VARCHAR AS SK_DATA,
+    JSON_DATA:SK_LOJA::NUMBER AS SK_LOJA,
+    JSON_DATA:QTD_ESTOQUE_PECAS::NUMBER AS QTD_ESTOQUE_PECAS,
+    JSON_DATA:VLR_ESTOQUE_VENDA::VARCHAR AS VLR_ESTOQUE_VENDA,
+    JSON_DATA:VLR_ESTOQUE_CUSTO_SEM_IMPOSTO::VARCHAR AS VLR_ESTOQUE_CUSTO_SEM_IMPOSTO,
+    JSON_DATA:VLR_ESTOQUE_CUSTO_COM_IMPOSTO::VARCHAR AS VLR_ESTOQUE_CUSTO_COM_IMPOSTO,
+    JSON_DATA:NUM_IDADE_ESTOQUE::VARCHAR AS NUM_IDADE_ESTOQUE,
+    JSON_DATA:DS_FAIXA_DE_IDADE_DD::VARCHAR AS DS_FAIXA_DE_IDADE_DD
+    JSON_DATA:_DMS_LOADED_AT::TIMESTAMP_NTZ AS _DMS_LOADED_AT,
     
     -- Metadados preservados para auditoria e rastreabilidade
     S3_FILE_NAME,              -- Arquivo de origem no S3

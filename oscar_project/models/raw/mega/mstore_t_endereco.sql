@@ -17,19 +17,19 @@ WITH raw_data AS (
 
 SELECT
     -- Colunas extraídas do JSON usando sintaxe Snowflake JSON_DATA:campo::TIPO
-    JSON_DATA:idendereco::NUMBER AS idendereco,
-    JSON_DATA:cep::VARCHAR AS cep,
-    JSON_DATA:uf::VARCHAR AS uf,
-    JSON_DATA:localidade::VARCHAR AS localidade,
-    JSON_DATA:bairro::VARCHAR AS bairro,
-    JSON_DATA:numero::VARCHAR AS numero,
-    JSON_DATA:complemento::VARCHAR AS complemento,
-    JSON_DATA:logradouro::VARCHAR AS logradouro,
-    JSON_DATA:codigoab::NUMBER AS codigoab,
-    JSON_DATA:tipomoradia::VARCHAR AS tipomoradia,
-    JSON_DATA:codigomunicipio::NUMBER AS codigomunicipio,
-    JSON_DATA:codigoexterno::VARCHAR AS codigoexterno,
-    JSON_DATA:_dms_loaded_at::TIMESTAMP_NTZ AS _dms_loaded_at,
+    JSON_DATA:IDENDERECO::NUMBER AS IDENDERECO,
+    JSON_DATA:CEP::VARCHAR AS CEP,
+    JSON_DATA:UF::VARCHAR AS UF,
+    JSON_DATA:LOCALIDADE::VARCHAR AS LOCALIDADE,
+    JSON_DATA:BAIRRO::VARCHAR AS BAIRRO,
+    JSON_DATA:NUMERO::VARCHAR AS NUMERO,
+    JSON_DATA:COMPLEMENTO::VARCHAR AS COMPLEMENTO,
+    JSON_DATA:LOGRADOURO::VARCHAR AS LOGRADOURO,
+    JSON_DATA:CODIGOAB::NUMBER AS CODIGOAB,
+    JSON_DATA:TIPOMORADIA::VARCHAR AS TIPOMORADIA,
+    JSON_DATA:CODIGOMUNICIPIO::NUMBER AS CODIGOMUNICIPIO,
+    JSON_DATA:CODIGOEXTERNO::VARCHAR AS CODIGOEXTERNO,
+    JSON_DATA:_DMS_LOADED_AT::TIMESTAMP_NTZ AS _DMS_LOADED_AT,
     
     -- Metadados preservados para auditoria e rastreabilidade
     S3_FILE_NAME,              -- Arquivo de origem no S3
