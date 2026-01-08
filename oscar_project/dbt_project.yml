@@ -67,6 +67,9 @@ seeds:
     aux_status_funcionamento_lojas:
       +enabled: true
 
+    aux_sheets_metragem_lojas:
+      +enabled: true
+
 vars:
   raw_json_copy:
     stage_base: "@RAW_JSON.landing_poc_stage"
